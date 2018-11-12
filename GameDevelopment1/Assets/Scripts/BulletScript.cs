@@ -10,11 +10,12 @@ public class BulletScript : MonoBehaviour {
 	public int damage;
 	public LayerMask whatIsSolid;
 
-	public GameObject destroyEffect;
+	public GameObject destroyEffect;	
 
 	private void Start()
 	{
 		Invoke("DestroyProjectile", lifeTime);
+		
 	}
 
 	private void Update()
@@ -29,15 +30,8 @@ public class BulletScript : MonoBehaviour {
 			DestroyProjectile();
 		}
 
-		/*if ())
-		{
-			transform.Translate(Vector2.left * speed * Time.deltaTime);
-		}
-		if (Input.GetKeyDown(KeyCode.RightArrow))
-		{
-			transform.Translate(Vector2.right * speed * Time.deltaTime);
-		}*/
-
+		transform.Translate(Vector2.right* speed * Time.deltaTime);
+		
 	}
 
 	void DestroyProjectile()

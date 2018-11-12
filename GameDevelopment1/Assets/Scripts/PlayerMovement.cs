@@ -5,15 +5,23 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public Rigidbody2D rb;
-    private Vector2 localScale;
-    private Vector2 moveVelocity;
+	[SerializeField]
+	private float speed;
 
-    public bool isMoving = false;
-    public float speed;
+	private Vector2 direction;
+	private Vector2 ShootDirection;
 
-    public BulletScript bulletSc;
-    public GameObject bullet;
+	public Transform ShotPosition;
+
+	//public bool isShoot;
+	public bool isShootleft;
+	public bool isShootRight;
+
+
+	public bool isMoving;
+	
+	public GameObject bullet;
+
 
     private float timeBtwShots;
     public float startTimeBtwShots;
@@ -21,60 +29,104 @@ public class PlayerMovement : MonoBehaviour
     public int roomCount;
 
     public CameraMovement CamMove;
-
-    public Transform shotPointLeft;
-    public Transform shotPointRight;
-    public Transform shotPointUp;
-    public Transform shotPointDown;
-
+   
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        //localScale = GetComponent<Transform>().localScale;
-    }
+		//localScale = GetComponent<Transform>().localScale;
+		
+	}
 
     void Update()
     {
-        //For Movement
-        Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        moveVelocity = moveInput * speed;
+		//For Movement
+			GetInp();
+			Move();
 
-        //ForShoot
-
-        if (timeBtwShots <= 0)
-        {
-            if (Input.GetKey(KeyCode.LeftArrow))
-            {
-                Instantiate(bullet, shotPointLeft.position, transform.rotation);
-                timeBtwShots = startTimeBtwShots;
-            }
-            else if (Input.GetKey(KeyCode.RightArrow))
-            {
-                Instantiate(bullet, shotPointRight.position, transform.rotation);
-                timeBtwShots = startTimeBtwShots;
-            }
-            else if (Input.GetKey(KeyCode.UpArrow))
-            {
-                Instantiate(bullet, shotPointUp.position, transform.rotation);
-                timeBtwShots = startTimeBtwShots;
-            }
-            else if (Input.GetKey(KeyCode.DownArrow))
-            {
-                Instantiate(bullet, shotPointDown.position, transform.rotation);
-                timeBtwShots = startTimeBtwShots;
-            }
-        }
-        else
-        {
-            timeBtwShots -= Time.deltaTime;
-        }
+		//ForShoot
+			ShootInp();
+			Shoot();
     }
 
+	public void Shoot()
+	{
+		if (timeBtwShots <= 0 )
+		{
+			if (isShootleft == true)
+			{
+				Debug.Log(isShootleft);
+				Instantiate(bullet,ShotPosition.position,transform.rotation);
+				timeBtwShots = startTimeBtwShots;
+			}
 
-    private void FixedUpdate()
-    {
-        rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
-    }
+			if (isShootRight == true)
+			{
+				Instantiate(bullet,ShotPosition.position, transform.rotation);
+				timeBtwShots = startTimeBtwShots;
+			}
+				
+		}
+		else
+		{
+			isShootleft = false;
+			isShootRight = false;
+			timeBtwShots -= Time.deltaTime;
+		}
+		
+	}
+
+	public void Move()
+	{
+		transform.Translate(direction * speed * Time.deltaTime);
+	}
+
+	private void GetInp()
+	{
+		direction = Vector2.zero;
+
+		if (Input.GetKey(KeyCode.W))
+		{
+			direction += Vector2.up;
+		}
+		if (Input.GetKey(KeyCode.A))
+		{
+			direction += Vector2.left;
+		}
+		if (Input.GetKey(KeyCode.S))
+		{
+			direction += Vector2.down;
+		}
+		if (Input.GetKey(KeyCode.D))
+		{
+			direction += Vector2.right;
+		}
+	}
+
+	public void ShootInp()
+	{
+		if (Input.GetKey(KeyCode.LeftArrow))
+		{
+			isShootleft = true;
+			
+		}
+		else if (Input.GetKey(KeyCode.RightArrow))
+		{
+			isShootRight = true;
+		
+		}
+		else if (Input.GetKey(KeyCode.UpArrow))
+		{
+			//isShoot = true;
+		
+		}
+		else if (Input.GetKey(KeyCode.DownArrow))
+		{
+			//isShoot = true;
+		}
+		
+	}
+
+
+
 
     void OnTriggerStay2D(Collider2D other)
     {
