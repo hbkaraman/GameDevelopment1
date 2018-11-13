@@ -7,6 +7,7 @@ public class Player : Character {
 
 	public CameraMovement CamMove;
 	public int roomCount;
+	public bool isDoorOpen;
 
 
 	// Use this for initialization
@@ -71,6 +72,10 @@ public class Player : Character {
 			roomCount = 4;
 			// CamMove.Shake(0.1f, 0.1f);
 			CamMove.CameraShift();
+		}
+		if (other.gameObject.tag == "Door")
+		{
+			isDoorOpen = true;
 		}
 	}
 }
