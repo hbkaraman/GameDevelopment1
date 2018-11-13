@@ -12,7 +12,7 @@ public class CameraMovement : MonoBehaviour
     public Transform room3;
     public Transform room4;
 
-    public PlayerMovement playerMovement;
+    public Player playerMovement;
 
     private void Awake()
     {

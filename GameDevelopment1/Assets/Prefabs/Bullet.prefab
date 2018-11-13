@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a087f7bd2b9c828438f96dac3999f379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 6
   lifeTime: 2.5
   distance: 5
   damage: 3
@@ -61,7 +61,6 @@ MonoBehaviour:
     m_Bits: 768
   destroyEffect: {fileID: 1657798570406232, guid: aa203cb34a3da974f845eacf29cbd926,
     type: 2}
-  player: {fileID: 0}
 --- !u!212 &212702078994492204
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -97,7 +96,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 14be59368ec5aac428aea1ba06825960, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5736d6b8b40970c4abe6f620014534b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
