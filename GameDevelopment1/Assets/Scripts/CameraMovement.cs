@@ -27,37 +27,6 @@ public class CameraMovement : MonoBehaviour
 
     }
 
-    /*#region SHAKE
-    public void Shake(float amount, float duration)
-    {
-        shakeAmount = amount;
-        InvokeRepeating("BeginShake", 0, 0.01f);
-        Invoke("StopShake", duration);
-    }
-
-    void BeginShake()
-    {
-        if (shakeAmount > 0)
-        {
-            Vector2 camPos = gameplayCamera.transform.position;
-
-            float offsetX = Random.value * shakeAmount * 2 - shakeAmount;
-            float offsetY = Random.value * shakeAmount * 2 - shakeAmount;
-            camPos.x += offsetX;
-            camPos.y += offsetY;
-            gameplayCamera.transform.position = camPos;
-
-        }
-
-    }
-
-    void StopShake()
-    {
-        CancelInvoke("BeginShake");
-        gameplayCamera.transform.localPosition = Vector2.zero;
-    }
-    #endregion*/
-
     public void CameraShift()
     {
         if (playerMovement.roomCount == 1)
