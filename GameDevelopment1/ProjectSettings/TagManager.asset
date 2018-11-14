@@ -10,6 +10,7 @@ TagManager:
   - room3
   - room4
   - Door
+  - wall
   layers:
   - Default
   - TransparentFX

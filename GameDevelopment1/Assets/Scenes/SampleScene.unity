@@ -209,12 +209,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 57459746}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 42.13, y: 0.07, z: 44.4}
-  m_LocalScale: {x: 1.7106249, y: 2.075, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 44.569206, y: -2.443736, z: -32.197655}
+  m_LocalScale: {x: 1.7106259, y: 4.639718, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 1545997220}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &172946422
 GameObject:
@@ -284,12 +284,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 172946422}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7, y: 7.6398067, z: 44.4}
-  m_LocalScale: {x: 2.975, y: 2.075, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.15079552, y: 5.6962643, z: -32.197655}
+  m_LocalScale: {x: 2.975, y: 3.3978126, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 1545997220}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &181883736
 GameObject:
@@ -360,12 +360,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 181883736}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.168, y: -0.066, z: 44.4}
+  m_LocalPosition: {x: 58.66, y: -0.07, z: 44.4}
   m_LocalScale: {x: 1.5189723, y: 1.5189723, z: 1.5189723}
   m_Children:
   - {fileID: 1801670138}
   - {fileID: 689937343}
   - {fileID: 447793233}
+  - {fileID: 1692316345}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -380,7 +381,7 @@ GameObject:
   - component: {fileID: 296037411}
   m_Layer: 0
   m_Name: "Duvarlar_kap\u01311"
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -466,7 +467,7 @@ GameObject:
   - component: {fileID: 325428790}
   m_Layer: 0
   m_Name: Duvarlar_alt
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -514,27 +515,27 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2083506298}
     m_Modifications:
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 12.44
+      value: 8.169997
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.13
+      value: -0.04213375
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 44.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.z
@@ -546,7 +547,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114930827719838616, guid: d21bf8bdc96e85646920709923dbaaf9,
         type: 2}
@@ -563,9 +564,31 @@ Prefab:
       propertyPath: anim
       value: 
       objectReference: {fileID: 434086263}
+    - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.65834016
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.65834016
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.65833986
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &371419639 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1134226546}
+--- !u!4 &434086261 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9,
+    type: 2}
+  m_PrefabInternal: {fileID: 356997701}
 --- !u!95 &434086263 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95692532253279804, guid: d21bf8bdc96e85646920709923dbaaf9,
@@ -582,7 +605,7 @@ GameObject:
   - component: {fileID: 440162119}
   m_Layer: 0
   m_Name: Duvarlar_alt
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -716,6 +739,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &482279756 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9,
+    type: 2}
+  m_PrefabInternal: {fileID: 716422705}
 --- !u!1 &517614654
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,6 +995,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &594026925 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1779088462}
 --- !u!1 &644611026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1082,7 @@ GameObject:
   - component: {fileID: 668719195}
   m_Layer: 0
   m_Name: "Duvar_\xFCst"
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1128,27 +1161,27 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1380833922}
     m_Modifications:
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 15.65
+      value: -8.220892
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.13
+      value: -0.03999999
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 44.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.z
@@ -1160,7 +1193,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1622384327217256, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_Name
@@ -1175,6 +1208,28 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 765901918}
+    - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.65834045
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.65834045
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.65833986
+      objectReference: {fileID: 0}
+    - target: {fileID: 61810272617808136, guid: d21bf8bdc96e85646920709923dbaaf9,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 61810272617808136, guid: d21bf8bdc96e85646920709923dbaaf9,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
   m_IsPrefabAsset: 0
@@ -1189,7 +1244,7 @@ GameObject:
   - component: {fileID: 736076169}
   m_Layer: 0
   m_Name: "Duvar_\xFCst"
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1305,7 +1360,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 765901914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 44.4}
+  m_LocalPosition: {x: -10.55, y: 0, z: 44.4}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children:
   - {fileID: 1896523333}
@@ -1519,7 +1574,7 @@ GameObject:
   - component: {fileID: 870805240}
   m_Layer: 0
   m_Name: Duvarlar_bas_bit
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1565,6 +1620,11 @@ BoxCollider2D:
 --- !u!95 &957975017 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95692532253279804, guid: d21bf8bdc96e85646920709923dbaaf9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1863473414}
+--- !u!4 &957975019 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9,
     type: 2}
   m_PrefabInternal: {fileID: 1863473414}
 --- !u!1 &965113253
@@ -1747,7 +1807,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 975887871}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.47, y: -0.31, z: 0}
+  m_LocalPosition: {x: -0.47, y: -1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1820381368}
@@ -1795,7 +1855,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1066894668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1872,6 +1932,53 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &1080092505
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4200158483422346, guid: 89948fa1a474cea458e42ad3c8852ace, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200158483422346, guid: 89948fa1a474cea458e42ad3c8852ace, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200158483422346, guid: 89948fa1a474cea458e42ad3c8852ace, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 44.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200158483422346, guid: 89948fa1a474cea458e42ad3c8852ace, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200158483422346, guid: 89948fa1a474cea458e42ad3c8852ace, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200158483422346, guid: 89948fa1a474cea458e42ad3c8852ace, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200158483422346, guid: 89948fa1a474cea458e42ad3c8852ace, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200158483422346, guid: 89948fa1a474cea458e42ad3c8852ace, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114192740534091506, guid: 89948fa1a474cea458e42ad3c8852ace,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 765901914}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 89948fa1a474cea458e42ad3c8852ace, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1083636563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,7 +1990,7 @@ GameObject:
   - component: {fileID: 1083636565}
   m_Layer: 0
   m_Name: "Duvarlar_kap\u01312"
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1931,27 +2038,27 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1820381368}
     m_Modifications:
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.16
+      value: -0.12508391
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 9.19
+      value: -3.9895399
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 44.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.z
@@ -1963,7 +2070,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1622384327217256, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_Name
@@ -1985,7 +2092,25 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.2631251
+      value: 0.83156556
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.65833986
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.65833986
+      objectReference: {fileID: 0}
+    - target: {fileID: 61810272617808136, guid: d21bf8bdc96e85646920709923dbaaf9,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 61810272617808136, guid: d21bf8bdc96e85646920709923dbaaf9,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
@@ -2033,7 +2158,7 @@ GameObject:
   - component: {fileID: 1242873116}
   m_Layer: 0
   m_Name: Duvarlar_alt
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2087,7 +2212,7 @@ GameObject:
   - component: {fileID: 1336667609}
   m_Layer: 0
   m_Name: "Duvarlar_kap\u01312"
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2199,12 +2324,14 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1380833920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.099, y: -0.066, z: 44.4}
+  m_LocalPosition: {x: 29.33, y: -0.07, z: 44.4}
   m_LocalScale: {x: 1.5189723, y: 1.5189723, z: 1.5189723}
   m_Children:
   - {fileID: 1490576464}
   - {fileID: 308515916}
   - {fileID: 37095046}
+  - {fileID: 482279756}
+  - {fileID: 594026925}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2289,7 +2416,7 @@ GameObject:
   - component: {fileID: 1416884675}
   m_Layer: 0
   m_Name: Duvarlar_bas_bit (1)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2301,7 +2428,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1416884673}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 14.522119, y: 0.46469942, z: 0}
+  m_LocalPosition: {x: 13.7, y: 0.46, z: 0}
   m_LocalScale: {x: 1.2271926, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 689937343}
@@ -2411,7 +2538,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1490576463}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4, y: 0, z: 0}
+  m_LocalPosition: {x: -0.76, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1380833922}
@@ -2429,7 +2556,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.37, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2440,7 +2567,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 17.8, y: 7.5}
+  m_Size: {x: 18.44, y: 7.5}
   m_EdgeRadius: 0
 --- !u!1 &1506120454
 GameObject:
@@ -2474,6 +2601,37 @@ Transform:
   m_Father: {fileID: 2083506298}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1545997219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1545997220}
+  m_Layer: 0
+  m_Name: RoomsExtras
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1545997220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1545997219}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.54920447, y: 2.513736, z: 76.59766}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 172946424}
+  - {fileID: 2146609960}
+  - {fileID: 57459748}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1554819799
 GameObject:
   m_ObjectHideFlags: 0
@@ -2485,7 +2643,7 @@ GameObject:
   - component: {fileID: 1554819801}
   m_Layer: 0
   m_Name: "Duvarlar_kap\u01312"
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2655,7 +2813,7 @@ GameObject:
   - component: {fileID: 1672217049}
   m_Layer: 0
   m_Name: "Duvarlar_kap\u01311"
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2698,6 +2856,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.74, y: 2.95}
   m_EdgeRadius: 0
+--- !u!4 &1692316345 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1992697577}
 --- !u!1 &1698345971
 GameObject:
   m_ObjectHideFlags: 0
@@ -2757,27 +2920,27 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1380833922}
     m_Modifications:
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 40.52782
+      value: 8.149107
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.10210776
+      value: 0.10999999
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 44.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.z
@@ -2789,7 +2952,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1622384327217256, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_Name
@@ -2800,6 +2963,18 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 765901918}
+    - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.65834045
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.65834045
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.65833986
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
   m_IsPrefabAsset: 0
@@ -2814,7 +2989,7 @@ GameObject:
   - component: {fileID: 1788698660}
   m_Layer: 9
   m_Name: "Duvar_\xFCst"
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2880,8 +3055,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1801670137}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.35740268, y: 0.055300552, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.68, y: 0.055300552, z: 0}
+  m_LocalScale: {x: 1.080625, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 181883738}
   m_RootOrder: 0
@@ -3096,12 +3271,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1820381366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.029999, y: 15.25, z: 44.4}
+  m_LocalPosition: {x: 0.029999, y: 16.28, z: 44.4}
   m_LocalScale: {x: 1.5189723, y: 1.5189723, z: 1.5189723}
   m_Children:
   - {fileID: 975887872}
   - {fileID: 1212702166}
   - {fileID: 1475636341}
+  - {fileID: 371419639}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3116,7 +3292,7 @@ GameObject:
   - component: {fileID: 1845925452}
   m_Layer: 0
   m_Name: "Duvarlar_kap\u01311"
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3164,31 +3340,31 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2083506298}
     m_Modifications:
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.16
+      value: -0.12508456
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 6.15
+      value: 4.092241
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 44.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.w
@@ -3196,7 +3372,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1622384327217256, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_Name
@@ -3223,7 +3399,15 @@ Prefab:
       objectReference: {fileID: 957975017}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.075
+      value: 0.7077154
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.65833986
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.65833986
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
@@ -3359,27 +3543,27 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 181883738}
     m_Modifications:
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 43.73
+      value: -8.188431
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.24
+      value: 0.20145199
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 44.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_LocalRotation.z
@@ -3391,7 +3575,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1622384327217256, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
       propertyPath: m_Name
@@ -3406,6 +3590,28 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 765901918}
+    - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.65834016
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.65834016
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717845713199270, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.65833986
+      objectReference: {fileID: 0}
+    - target: {fileID: 61810272617808136, guid: d21bf8bdc96e85646920709923dbaaf9,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 61810272617808136, guid: d21bf8bdc96e85646920709923dbaaf9,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 3.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d21bf8bdc96e85646920709923dbaaf9, type: 2}
   m_IsPrefabAsset: 0
@@ -3562,12 +3768,14 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2083506296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: -0.066, z: 44.4}
+  m_LocalPosition: {x: 0.03, y: -0.07, z: 44.4}
   m_LocalScale: {x: 1.5189723, y: 1.5189723, z: 1.5189723}
   m_Children:
   - {fileID: 1698345972}
   - {fileID: 1506120455}
   - {fileID: 1460311482}
+  - {fileID: 434086261}
+  - {fileID: 957975019}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3582,7 +3790,7 @@ GameObject:
   - component: {fileID: 2121242033}
   m_Layer: 0
   m_Name: Duvarlar_alt
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3763,10 +3971,10 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2146609958}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 13.92, y: -0.29, z: 44.4}
-  m_LocalScale: {x: 1.7106249, y: 2.075, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 15.1592045, y: -2.803736, z: -32.197655}
+  m_LocalScale: {x: 1.7106259, y: 4.3497205, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 1545997220}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
