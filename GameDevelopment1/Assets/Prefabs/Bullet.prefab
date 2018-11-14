@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4404212901722890}
   - component: {fileID: 212702078994492204}
   - component: {fileID: 114377801804457890}
+  - component: {fileID: 50231344597980312}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -41,6 +42,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50231344597980312
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1327893952493908}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!114 &114377801804457890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,7 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a087f7bd2b9c828438f96dac3999f379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 8
   lifeTime: 2.5
   distance: 5
   damage: 3
@@ -61,6 +82,7 @@ MonoBehaviour:
     m_Bits: 768
   destroyEffect: {fileID: 1657798570406232, guid: aa203cb34a3da974f845eacf29cbd926,
     type: 2}
+  rb: {fileID: 50231344597980312}
 --- !u!212 &212702078994492204
 SpriteRenderer:
   m_ObjectHideFlags: 1

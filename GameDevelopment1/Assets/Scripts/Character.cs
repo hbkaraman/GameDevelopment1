@@ -34,19 +34,19 @@ public abstract class Character : MonoBehaviour {
 
 	protected virtual void Update()
 	{
-		Move();
+		
 	}
 
 	public void FixedUpdate()
 	{
-	
+		Move();
 	}
 
 
 	public void Move()
 	{
 		// Playerı Hareket ettirmek için 
-		transform.Translate(direction.normalized * speed * Time.deltaTime);
+		myRigidbody.velocity = direction.normalized * speed;
 
 		AnimateMovement(direction);
 	}

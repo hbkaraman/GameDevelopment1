@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 95817e198928b394aab16f02aec59950
+guid: c284d5c65a332db49b6ac2343bc4162d
 TextureImporter:
   fileIDToRecycleName:
-    21300000: "kap\u01311_0"
-    21300002: "kap\u01311_1"
-    21300004: "kap\u01311_2"
-    21300006: "kap\u01311_3"
-    21300008: "kap\u01311_4"
+    21300000: perspektiiflikap_0
+    21300002: perspektiiflikap_2
+    21300004: perspektiiflikap_3
+    21300006: perspektiiflikap_4
+    21300008: perspektiiflikap_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -89,13 +89,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "kap\u01311_0"
+      name: perspektiiflikap_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 164
-        width: 365
-        height: 232
+        x: 166
+        y: 452
+        width: 432
+        height: 137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -103,19 +103,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddc35420e0ed2ff4bbfb2ff7b1396937
+      spriteID: ad7407b0004b4e041931b5544bf5f627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "kap\u01311_1"
+      name: perspektiiflikap_2
       rect:
         serializedVersion: 2
-        x: 400
-        y: 164
-        width: 363
-        height: 232
+        x: 618
+        y: 453
+        width: 420
+        height: 137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,19 +123,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbc1635c666664b4bafb1829d3601270
+      spriteID: a69dbeb2eac4dbb408d0b0dfc1daf8c0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "kap\u01311_2"
+      name: perspektiiflikap_3
       rect:
         serializedVersion: 2
-        x: 772
-        y: 164
-        width: 358
-        height: 232
+        x: 180
+        y: 268
+        width: 427
+        height: 137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,19 +143,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cae4aba94168d1f46bd6bc81b9fdf3d8
+      spriteID: 7fd072e5012b29f4eb1716f7e5f465ea
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "kap\u01311_3"
+      name: perspektiiflikap_4
       rect:
         serializedVersion: 2
-        x: 1148
-        y: 164
-        width: 361
-        height: 232
+        x: 619
+        y: 268
+        width: 430
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,19 +163,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79feb90dfc02a3a43b91c678a04a3fcc
+      spriteID: eb8b49e0ce7914b49ac2009b569a035b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "kap\u01311_4"
+      name: perspektiiflikap_5
       rect:
         serializedVersion: 2
-        x: 1507
-        y: 164
-        width: 389
-        height: 232
+        x: 188
+        y: 86
+        width: 429
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,7 +183,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5eb77b2e7bf44e74487e5ca8cb2b7501
+      spriteID: 00b7bdbab7fbfe64c873002ecb96658c
       vertices: []
       indices: 
       edges: []
@@ -191,7 +191,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 64e5c5362cd31d04da5a27358cf0c3e9
+    spriteID: e43329d3ef6dcd949af74ba851e92608
     vertices: []
     indices: 
     edges: []
