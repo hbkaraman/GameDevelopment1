@@ -4,31 +4,58 @@ using UnityEngine;
 
 public class Player : Character
 {
+	[SerializeField]
+	private Stat health;
+	[SerializeField]
+	private Stat mana;
+	
+	private float initHealth = 100;
 
+	private float initMana = 50;
 
     public CameraMovement CamMove;
+
     public int roomCount;
+
     public bool isDoorOpen;
 
     // Use this for initialization
     protected override void Start()
     {
+		// For HealthBar "healthValue","maxHealth"
+		health.Initilized(initHealth, initHealth);
+		// For ManaBar
+		mana.Initilized(initMana, initMana);
+
         base.Start();
     }
 
     // Update is called once per frame
     protected override void Update()
     {
-        GetInput();
+		GetInput();
 
-        base.Update();
+		base.Update();
 
         CamMove.CameraShift();
     }
 
     private void GetInput()
     {
-        direction = Vector2.zero;
+
+		if (Input.GetKeyDown(KeyCode.U))
+		{
+			health.MyCurrentValue -= 10;
+			mana.MyCurrentValue -= 10;
+		}
+		if (Input.GetKeyDown(KeyCode.I))
+		{
+			health.MyCurrentValue += 10;
+			mana.MyCurrentValue += 10;
+		}
+
+
+		direction = Vector2.zero;
 
         if (Input.GetKey(KeyCode.W))
         {
@@ -74,9 +101,14 @@ public class Player : Character
             // CamMove.Shake(0.1f, 0.1f);
             //CamMove.CameraShift();
         }
-        if (other.gameObject.tag == "Door")
-        {
-            isDoorOpen = true;
-        }
+       
     }
+
+	private void OnTriggerStay2D(Collider2D collision)
+	{
+		if (collision.gameObject.tag == "Door")
+		{
+			isDoorOpen = true;
+		}
+	}
 }

@@ -6,7 +6,7 @@ public class DoorScript : MonoBehaviour {
 
 	public Player player;
 
-	private Animator anim;
+	public Animator anim;
 
 	// Update is called once per frame
 	void Update ()
