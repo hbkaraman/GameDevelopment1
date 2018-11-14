@@ -20,9 +20,8 @@ public class BulletScript : MonoBehaviour {
 		Invoke("DestroyProjectile", lifeTime);
 		rb = GetComponent<Rigidbody2D>();
 
-		Vector2 velTotal = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>().velocity + Vector2.right;
-		Debug.Log(velTotal);
-		rb.velocity = velTotal.normalized * speed;
+		//Vector2 velTotal = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>().velocity + Vector2.right;
+		rb.velocity = transform.right * speed;
 
 		//if (bulletDirection == Quaternion.Euler(0f, 0f, 180))
 		//{
