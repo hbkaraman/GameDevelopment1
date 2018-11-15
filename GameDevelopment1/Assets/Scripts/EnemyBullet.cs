@@ -4,42 +4,67 @@ using UnityEngine;
 
 public class EnemyBullet : MonoBehaviour {
 
-    public float speed;
-    public float lifeTime;
-    public float distance;
-    public int damage;
-    public LayerMask whatIsSolid;
+    public float hitChance = 0f;
 
-    public GameObject destroyEffect;
+    private GameObject target;
+    private Vector3 missOffset = Vector3.zero;
+    private bool isHitting = false;
+    private bool isCheckingChance = true;
 
-    Quaternion bulletDirection;
-    public Rigidbody2D rb;
-
-    private void Start()
+    // Use this for initialization
+    void Start()
     {
-        Invoke("DestroyProjectile", lifeTime);
-        rb = GetComponent<Rigidbody2D>();
-
-        rb.velocity = transform.right * speed;
+        target = GameObject.FindGameObjectWithTag("Player");
+        transform.LookAt(target.GetComponent<Transform>());
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.forward, distance, whatIsSolid);
-        if (hitInfo.collider != null)
+        if (isCheckingChance)
         {
-            if (hitInfo.collider.CompareTag("Player"))
+            float chance = Random.Range(0f, 100f);
+            if (chance <= hitChance)
             {
-                hitInfo.collider.GetComponent<EnemyScript>().TakeDamage(damage);
+                isHitting = true;
+                transform.LookAt(target.GetComponent<Transform>().position + new Vector3(0f, 1f, 0f));
             }
-            DestroyProjectile();
+            else
+            {
+                isHitting = false;
+                missOffset = new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f), 0f);
+                transform.LookAt(target.GetComponent<Transform>().position + missOffset);
+            }
+            Debug.Log("IsHitting = " + isHitting);
+        }
+                
+        StartCoroutine(Shoot());
+    }
+
+    IEnumerator Shoot()
+    {
+        isCheckingChance = false;
+
+        transform.Translate(Vector3.forward * Time.timeScale);
+
+        yield return new WaitForSeconds(1f);
+        Destroy(gameObject);
+        isCheckingChance = true;
+    }
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            // TODO
+            Debug.Log("I hit player!");
+            GetComponent<LineRenderer>().enabled = false;
+            Destroy(gameObject);
+        }
+        else if(col.gameObject.tag == "Environment")
+        {
+            Debug.Log("I hit environment!");
+            Destroy(gameObject);
         }
     }
-
-    void DestroyProjectile()
-    {
-        Instantiate(destroyEffect, transform.position, Quaternion.identity);
-        Destroy(gameObject);
-    }
-
 }

@@ -4,14 +4,7 @@ using UnityEngine;
 
 public class Player : Character
 {
-	[SerializeField]
-	private Stat health;
-	[SerializeField]
-	private Stat mana;
 	
-	private float initHealth = 100;
-
-	private float initMana = 50;
 
     public CameraMovement CamMove;
 
@@ -22,10 +15,8 @@ public class Player : Character
     // Use this for initialization
     protected override void Start()
     {
-		// For HealthBar "healthValue","maxHealth"
-		health.Initilized(initHealth, initHealth);
-		// For ManaBar
-		mana.Initilized(initMana, initMana);
+		
+		
 
         base.Start();
     }
@@ -42,18 +33,6 @@ public class Player : Character
 
     private void GetInput()
     {
-
-		if (Input.GetKeyDown(KeyCode.U))
-		{
-			health.MyCurrentValue -= 10;
-			mana.MyCurrentValue -= 10;
-		}
-		if (Input.GetKeyDown(KeyCode.I))
-		{
-			health.MyCurrentValue += 10;
-			mana.MyCurrentValue += 10;
-		}
-
 
 		direction = Vector2.zero;
 

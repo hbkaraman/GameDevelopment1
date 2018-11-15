@@ -1398,8 +1398,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a51badd26a63684e9cd4e0c726d1c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
   health: {fileID: 1902996196}
+  initHealth: 0
+  speed: 7
   mana: {fileID: 2070142665}
   CamMove: {fileID: 519420030}
   roomCount: 0
@@ -2006,7 +2007,7 @@ Prefab:
     - target: {fileID: 61324116892059754, guid: 9c7d86ec170729a49b663ff79f220367,
         type: 2}
       propertyPath: m_Size.x
-      value: 30
+      value: 40.06
       objectReference: {fileID: 0}
     - target: {fileID: 61324116892059754, guid: 9c7d86ec170729a49b663ff79f220367,
         type: 2}
@@ -2014,6 +2015,11 @@ Prefab:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114192740534091506, guid: 9c7d86ec170729a49b663ff79f220367,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 765901914}
+    - target: {fileID: 114500155015557566, guid: 9c7d86ec170729a49b663ff79f220367,
         type: 2}
       propertyPath: player
       value: 
@@ -2175,6 +2181,10 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 765901914}
+    - target: {fileID: 1263093426967844, guid: d7aea5a2d0fafc840b7ee8e4ea8b9cbe, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7aea5a2d0fafc840b7ee8e4ea8b9cbe, type: 2}
   m_IsPrefabAsset: 0
@@ -2937,6 +2947,10 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 765901914}
+    - target: {fileID: 1263093426967844, guid: 89948fa1a474cea458e42ad3c8852ace, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89948fa1a474cea458e42ad3c8852ace, type: 2}
   m_IsPrefabAsset: 0

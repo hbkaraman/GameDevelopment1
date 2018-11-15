@@ -4,14 +4,30 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour {
 
+	[SerializeField]
+	private CanvasGroup healthgroup;
+
+	[SerializeField]
+	private Stat enemyHealth;
+
+	[SerializeField]
+	private float health;
+
+
 	//public Animator camAnim;
-	public int health;
 	public GameObject deathEffect;
-	//public GameObject explosion;
+	public GameObject explosion;
+
+	private void Start()
+	{
+		enemyHealth.Initilized(health, health);
+	}
 
 	private void Update()
 	{
-		if (health <= 0)
+		healthgroup.alpha = 1;
+
+		if (enemyHealth.MyCurrentValue <= 0 )
 		{
 			Instantiate(deathEffect, transform.position, Quaternion.identity);
 			Destroy(gameObject);
@@ -21,7 +37,7 @@ public class EnemyScript : MonoBehaviour {
 	public void TakeDamage(int damage)
 	{
 		//camAnim.SetTrigger("shake");
-		//Instantiate(explosion, transform.position, Quaternion.identity);
-		health -= damage;
+		Instantiate(explosion, transform.position, Quaternion.identity);
+		enemyHealth.MyCurrentValue -= damage;
 	}
 }

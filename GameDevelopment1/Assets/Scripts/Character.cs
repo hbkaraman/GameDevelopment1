@@ -6,11 +6,17 @@ public abstract class Character : MonoBehaviour {
 
 
 	[SerializeField]
+	protected Stat health;
+	[SerializeField]
+	private float initHealth;
+
+	[SerializeField]
 	private float speed;
 
 	protected Vector2 direction;
 
 	private Animator myAnimator;
+
 
 	/*public bool IsMoving
 	{
@@ -27,6 +33,10 @@ public abstract class Character : MonoBehaviour {
 	// Use this for initialization
 	protected virtual void Start()
 	{
+
+		// For HealthBar "healthValue","maxHealth"
+		health.Initilized(initHealth, initHealth);
+
 		myRigidbody = GetComponent<Rigidbody2D>();
 		myAnimator = GetComponent<Animator>();
 	}
@@ -64,6 +74,16 @@ public abstract class Character : MonoBehaviour {
 		myAnimator.SetFloat("x", + direction.x);
 		myAnimator.SetFloat("y", + direction.y);
 
+	}
+
+	public virtual void TakeDamage(float damage)
+	{
+		health.MyCurrentValue -= damage;
+
+		if (health.MyCurrentValue <= 0)
+		{
+			//DİE!!
+		}
 	}
 
 

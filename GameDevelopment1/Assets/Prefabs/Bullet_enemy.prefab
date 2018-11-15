@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4404212901722890}
   - component: {fileID: 212702078994492204}
   - component: {fileID: 50231344597980312}
-  - component: {fileID: 114112661594487782}
   m_Layer: 0
   m_Name: Bullet_enemy
   m_TagString: Untagged
@@ -62,27 +61,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &114112661594487782
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1327893952493908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc6645ceac4fd5b47af6fa7601d1ff97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 8
-  lifeTime: 2.5
-  distance: 5
-  damage: 5
-  whatIsSolid:
-    serializedVersion: 2
-    m_Bits: 1536
-  destroyEffect: {fileID: 1657798570406232, guid: aa203cb34a3da974f845eacf29cbd926,
-    type: 2}
-  rb: {fileID: 50231344597980312}
 --- !u!212 &212702078994492204
 SpriteRenderer:
   m_ObjectHideFlags: 1
