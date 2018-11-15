@@ -36,5 +36,4 @@ public class EnemyFollow : MonoBehaviour {
             playerTriggered = false;
         }
     }
-
 }
