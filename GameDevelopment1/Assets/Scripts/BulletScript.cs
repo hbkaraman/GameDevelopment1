@@ -22,23 +22,6 @@ public class BulletScript : MonoBehaviour {
 
 		//Vector2 velTotal = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>().velocity + Vector2.right;
 		rb.velocity = transform.right * speed;
-
-		//if (bulletDirection == Quaternion.Euler(0f, 0f, 180))
-		//{
-		//	rb.velocity = Vector2.down * speed;
-		//}
-		//if (bulletDirection == Quaternion.Euler(0f, 0f, 90))
-		//{
-		//	this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
-		//}
-		//if (bulletDirection == Quaternion.Euler(0f, 0f, 0))
-		//{
-		//	this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.up * speed;
-		//}
-		//if (bulletDirection == Quaternion.Euler(0f, 0f, 270))
-		//{
-		//	this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.left * speed;
-		//}
 	}
 
 	private void Update()
