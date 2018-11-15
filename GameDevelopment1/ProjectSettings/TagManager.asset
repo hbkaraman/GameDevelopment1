@@ -11,6 +11,7 @@ TagManager:
   - room4
   - Door
   - wall
+  - bullet
   layers:
   - Default
   - TransparentFX

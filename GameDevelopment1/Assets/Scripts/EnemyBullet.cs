@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBullet : MonoBehaviour {
+public class EnemyBullet : MonoBehaviour
+{
 
     public float hitChance = 0f;
 
@@ -15,6 +16,7 @@ public class EnemyBullet : MonoBehaviour {
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player");
+
         transform.LookAt(target.GetComponent<Transform>());
     }
 
@@ -37,7 +39,7 @@ public class EnemyBullet : MonoBehaviour {
             }
             Debug.Log("IsHitting = " + isHitting);
         }
-                
+
         StartCoroutine(Shoot());
     }
 
@@ -45,9 +47,9 @@ public class EnemyBullet : MonoBehaviour {
     {
         isCheckingChance = false;
 
-        transform.Translate(Vector3.forward * Time.timeScale);
+        transform.Translate(Vector3.forward * Time.timeScale / 5);
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(4f);
         Destroy(gameObject);
         isCheckingChance = true;
     }
@@ -61,7 +63,7 @@ public class EnemyBullet : MonoBehaviour {
             GetComponent<LineRenderer>().enabled = false;
             Destroy(gameObject);
         }
-        else if(col.gameObject.tag == "Environment")
+        else if (col.gameObject.tag == "Environment")
         {
             Debug.Log("I hit environment!");
             Destroy(gameObject);

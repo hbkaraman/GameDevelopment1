@@ -82,9 +82,7 @@ public abstract class Character : MonoBehaviour {
 
 		if (health.MyCurrentValue <= 0)
 		{
-			//DİE!!
+
 		}
 	}
-
-
 }

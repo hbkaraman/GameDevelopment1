@@ -12,6 +12,9 @@ public class Player : Character
 
     public bool isDoorOpen;
 
+    public GameObject destroyEffect;
+
+
     // Use this for initialization
     protected override void Start()
     {
@@ -80,7 +83,14 @@ public class Player : Character
             // CamMove.Shake(0.1f, 0.1f);
             //CamMove.CameraShift();
         }
-       
+
+        if (other.gameObject.tag == "bullet")
+        {
+            Destroy(other.gameObject);
+            Instantiate(destroyEffect, transform.position, Quaternion.identity);
+
+            TakeDamage(10);
+        }
     }
 
 	private void OnTriggerStay2D(Collider2D collision)
@@ -89,5 +99,5 @@ public class Player : Character
 		{
 			isDoorOpen = true;
 		}
-	}
+    }
 }
