@@ -12,8 +12,9 @@ public class EnemyBullet : MonoBehaviour
     private bool isHitting = false;
     private bool isCheckingChance = true;
 
-    // Use this for initialization
-    void Start()
+	public GameObject destroyEffect;
+	// Use this for initialization
+	void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player");
 
@@ -47,7 +48,7 @@ public class EnemyBullet : MonoBehaviour
     {
         isCheckingChance = false;
 
-        transform.Translate(Vector3.forward * Time.timeScale / 5);
+        transform.Translate(Vector3.forward * Time.timeScale / 6);
 
         yield return new WaitForSeconds(4f);
         Destroy(gameObject);
@@ -67,6 +68,7 @@ public class EnemyBullet : MonoBehaviour
         {
             Debug.Log("I hit environment!");
             Destroy(gameObject);
-        }
+			Instantiate(destroyEffect, transform.position, Quaternion.identity);
+		}
     }
 }

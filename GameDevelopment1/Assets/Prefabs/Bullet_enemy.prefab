@@ -112,3 +112,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitChance: 0
+  destroyEffect: {fileID: 1657798570406232, guid: aa203cb34a3da974f845eacf29cbd926,
+    type: 2}

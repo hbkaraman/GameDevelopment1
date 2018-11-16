@@ -12,6 +12,8 @@ TagManager:
   - Door
   - wall
   - bullet
+  - Boss
+  - Enviroment
   layers:
   - Default
   - TransparentFX

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Player : Character
 {
-	
-
     public CameraMovement CamMove;
 
     public int roomCount;
@@ -14,25 +12,61 @@ public class Player : Character
 
     public GameObject destroyEffect;
 
+	public GameObject shield;
 
-    // Use this for initialization
-    protected override void Start()
+	private float timer;
+
+	private float specialTime = 3f;
+
+	private bool isSpecialActive;
+
+	// Use this for initialization
+	protected override void Start()
     {
-		
-		
-
         base.Start();
     }
 
     // Update is called once per frame
     protected override void Update()
     {
+
+		timer += Time.deltaTime;
+
+		if (Input.GetKey(KeyCode.Space))
+		{
+			timer = 0;
+			isSpecialActive = true;
+			shield.SetActive(true);
+		}
+		if(isSpecialActive == true)
+		{
+
+			myRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+
+			if (timer >= specialTime)
+			{
+				timer = 0;
+				isSpecialActive = false;
+				shield.SetActive(false);
+				myRigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
+			}
+
+		}
+		
+
+		if (Input.GetKey(KeyCode.R))
+		{
+			Time.timeScale = 1;
+			Application.LoadLevel(Application.loadedLevel);
+		}
+
 		GetInput();
 
 		base.Update();
 
         CamMove.CameraShift();
     }
+
 
     private void GetInput()
     {
@@ -86,10 +120,13 @@ public class Player : Character
 
         if (other.gameObject.tag == "bullet")
         {
-            Destroy(other.gameObject);
-            Instantiate(destroyEffect, transform.position, Quaternion.identity);
+			Destroy(other.gameObject);
 
-            TakeDamage(10);
+			if(isSpecialActive == false)
+			{
+				TakeDamage(10);
+				Instantiate(destroyEffect, transform.position, Quaternion.identity);
+			}   
         }
     }
 
@@ -100,4 +137,23 @@ public class Player : Character
 			isDoorOpen = true;
 		}
     }
+
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+		if(collision.gameObject.tag == "Enemy")
+		{
+			if(isSpecialActive == false)
+			{
+				TakeDamage(10);
+			}
+		}
+
+		if (collision.gameObject.tag == "Boss")
+		{
+			if (isSpecialActive == false)
+			{
+				TakeDamage(30);
+			}
+		}
+	}
 }

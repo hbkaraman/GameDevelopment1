@@ -33,8 +33,12 @@ public class BulletScript : MonoBehaviour {
 			{
 				hitInfo.collider.GetComponent<EnemyScript>().TakeDamage(damage);
 			}
+			if (hitInfo.collider.CompareTag("Boss"))
+			{
+				hitInfo.collider.GetComponent<BoosScript>().TakeDamage(damage);
+			}
 
-			DestroyProjectile();
+		   DestroyProjectile();
 		}
 
 

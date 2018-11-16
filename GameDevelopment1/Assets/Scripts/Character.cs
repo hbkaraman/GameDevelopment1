@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class Character : MonoBehaviour {
 
@@ -17,6 +18,8 @@ public abstract class Character : MonoBehaviour {
 
 	private Animator myAnimator;
 
+	public Image LossScene;
+
 
 	/*public bool IsMoving
 	{
@@ -27,7 +30,7 @@ public abstract class Character : MonoBehaviour {
 	}*/
 
 
-	private Rigidbody2D myRigidbody;
+	protected Rigidbody2D myRigidbody;
 
 
 	// Use this for initialization
@@ -82,7 +85,12 @@ public abstract class Character : MonoBehaviour {
 
 		if (health.MyCurrentValue <= 0)
 		{
+			LossScene.enabled = true;
 
+			if(LossScene.enabled == true)
+			{
+				Time.timeScale = 0;
+			}
 		}
 	}
 }

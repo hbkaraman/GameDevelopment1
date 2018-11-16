@@ -17,7 +17,10 @@ public class Weapon : MonoBehaviour {
 	public GameObject bullet;
 
 	protected bool isManaFinish;
-	
+
+	public bool isManaFull;
+
+
 	Quaternion bulletDirection;
 
 	// Use this for initialization
@@ -55,7 +58,23 @@ public class Weapon : MonoBehaviour {
 			}
 		}
 
+		if(mana.MyCurrentValue == 50)
+		{
+			isManaFull = true;
+		}
+		else if(mana.MyCurrentValue < 50)
+		{
+			isManaFull = false;
+		}
+
+		if (potionmana.potiontriggered == true && mana.MyCurrentValue < 50)
+		{
+			mana.MyCurrentValue += 25;
+			potionmana.potiontriggered = false;
+		}
+	
 		ManabarEnd();
+
 	}
 
 	void ShootB()
@@ -82,15 +101,6 @@ public class Weapon : MonoBehaviour {
 		{
 			isManaFinish = false;
 		}
-	}
-
-	public void ManaPotion()
-	{
-		if(potionmana.potiontriggered == true)
-		{
-			mana.MyCurrentValue += 10;
-		}
-		
 	}
 
 	/*public void Shoot()
