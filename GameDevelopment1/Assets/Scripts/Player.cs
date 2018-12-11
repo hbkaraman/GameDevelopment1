@@ -5,64 +5,61 @@ using UnityEngine;
 public class Player : Character
 {
     public CameraMovement CamMove;
-
     public int roomCount;
-
     public bool isDoorOpen;
-
     public GameObject destroyEffect;
+    public GameObject shield;
+    public int goldCount;
+    public int redPotCount;
+    public int bluePotCount;
+    public bool redPotUsed;
 
-	public GameObject shield;
+    private float timer;
+    private float specialTime = 3f;
+    private bool isSpecialActive;
 
-	private float timer;
-
-	private float specialTime = 3f;
-
-	private bool isSpecialActive;
-
-	// Use this for initialization
-	protected override void Start()
+    // Use this for initialization
+    protected override void Start()
     {
         base.Start();
+        redPotCount = 5;
+        bluePotCount = 5;
     }
 
     // Update is called once per frame
     protected override void Update()
     {
 
-		timer += Time.deltaTime;
+        timer += Time.deltaTime;
 
-		if (Input.GetKey(KeyCode.Space))
-		{
-			timer = 0;
-			isSpecialActive = true;
-			shield.SetActive(true);
-		}
-		if(isSpecialActive == true)
-		{
+        if (Input.GetKey(KeyCode.Space))
+        {
+            timer = 0;
+            isSpecialActive = true;
+            shield.SetActive(true);
+        }
+        if (isSpecialActive == true)
+        {
+            myRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
 
-			myRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+            if (timer >= specialTime)
+            {
+                timer = 0;
+                isSpecialActive = false;
+                shield.SetActive(false);
+                myRigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
+            }
+        }
 
-			if (timer >= specialTime)
-			{
-				timer = 0;
-				isSpecialActive = false;
-				shield.SetActive(false);
-				myRigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
-			}
+        if (Input.GetKey(KeyCode.R))
+        {
+            Time.timeScale = 1;
+            Application.LoadLevel(Application.loadedLevel);
+        }
 
-		}
-		
+        GetInput();
 
-		if (Input.GetKey(KeyCode.R))
-		{
-			Time.timeScale = 1;
-			Application.LoadLevel(Application.loadedLevel);
-		}
-
-		GetInput();
-
-		base.Update();
+        base.Update();
 
         CamMove.CameraShift();
     }
@@ -71,7 +68,7 @@ public class Player : Character
     private void GetInput()
     {
 
-		direction = Vector2.zero;
+        direction = Vector2.zero;
 
         if (Input.GetKey(KeyCode.W))
         {
@@ -88,6 +85,12 @@ public class Player : Character
         if (Input.GetKey(KeyCode.D))
         {
             direction += Vector2.right;
+        }
+        if (Input.GetKeyDown(KeyCode.F)&& health.MyCurrentValue < health.MyMaxValue&& redPotCount > 0)
+        {
+            health.MyCurrentValue += 10;
+            redPotCount -= 1;
+
         }
     }
 
@@ -120,40 +123,56 @@ public class Player : Character
 
         if (other.gameObject.tag == "bullet")
         {
-			Destroy(other.gameObject);
+            Destroy(other.gameObject);
 
-			if(isSpecialActive == false)
-			{
-				TakeDamage(10);
-				Instantiate(destroyEffect, transform.position, Quaternion.identity);
-			}   
+            if (isSpecialActive == false)
+            {
+                TakeDamage(10);
+                Instantiate(destroyEffect, transform.position, Quaternion.identity);
+            }
+        }
+
+        if (other.gameObject.tag == "gold")
+        {
+            goldCount += 5;
+            Destroy(GameObject.FindWithTag("gold"));
+        }
+        if (other.gameObject.tag == "redPot")
+        {
+            redPotCount += 1;
+            Destroy(GameObject.FindWithTag("redPot"));
+        }
+        if (other.gameObject.tag == "bluePot")
+        {
+            bluePotCount += 1;
+            Destroy(GameObject.FindWithTag("bluePot"));
         }
     }
 
-	private void OnTriggerStay2D(Collider2D collision)
-	{
-		if (collision.gameObject.tag == "Door")
-		{
-			isDoorOpen = true;
-		}
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Door")
+        {
+            isDoorOpen = true;
+        }
     }
 
-	private void OnCollisionEnter2D(Collision2D collision)
-	{
-		if(collision.gameObject.tag == "Enemy")
-		{
-			if(isSpecialActive == false)
-			{
-				TakeDamage(10);
-			}
-		}
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            if (isSpecialActive == false)
+            {
+                TakeDamage(10);
+            }
+        }
 
-		if (collision.gameObject.tag == "Boss")
-		{
-			if (isSpecialActive == false)
-			{
-				TakeDamage(30);
-			}
-		}
-	}
+        if (collision.gameObject.tag == "Boss")
+        {
+            if (isSpecialActive == false)
+            {
+                TakeDamage(30);
+            }
+        }
+    }
 }

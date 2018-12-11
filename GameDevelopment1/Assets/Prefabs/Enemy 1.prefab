@@ -108,8 +108,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1263093426967844}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.990001, y: 15.87, z: 44.4}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.5354314, y: 17.542969, z: 44.4}
   m_LocalScale: {x: 0.23742431, y: 0.23742431, z: 0.23742431}
   m_Children:
   - {fileID: 4728276270820254}
@@ -244,6 +244,9 @@ MonoBehaviour:
   deathEffect: {fileID: 1110264763428426, guid: 5487e197c27fe54408d2e6455649c432,
     type: 2}
   explosion: {fileID: 1110264763428426, guid: 5487e197c27fe54408d2e6455649c432, type: 2}
+  gold: {fileID: 1750207947931956, guid: ba11059a7f5a9694e8502ec4499a9f64, type: 2}
+  bluePot: {fileID: 1095158171050264, guid: 5bcadf3515f773e4183196bb873c90c1, type: 2}
+  redPot: {fileID: 1470974743451642, guid: 5ecc74cf70b092a418674d61b9c48708, type: 2}
 --- !u!114 &114192740534091506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -343,7 +346,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1263093426967844}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bc18a1a979855e4e8675f9f3a0afbc0, type: 3}
   m_Name: 

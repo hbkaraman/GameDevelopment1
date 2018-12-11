@@ -15,6 +15,7 @@ public class Weapon : MonoBehaviour {
 	public float startTimeBtwShots;
 
 	public GameObject bullet;
+    public Player player;
 
 	protected bool isManaFinish;
 
@@ -72,9 +73,13 @@ public class Weapon : MonoBehaviour {
 			mana.MyCurrentValue += 25;
 			potionmana.potiontriggered = false;
 		}
-	
-		ManabarEnd();
 
+        if (Input.GetKeyDown(KeyCode.G) && mana.MyCurrentValue < 50&&player.bluePotCount>0)
+        {
+            mana.MyCurrentValue += 10;
+            player.bluePotCount -= 1;
+        }
+        ManabarEnd();
 	}
 
 	void ShootB()
