@@ -5,11 +5,17 @@ using UnityEngine.UI;
 
 public abstract class Character : MonoBehaviour {
 
+	
 
 	[SerializeField]
 	protected Stat health;
 	[SerializeField]
 	private float initHealth;
+
+	[SerializeField]
+	protected Stat mana;
+	[SerializeField]
+	private float initMana;
 
 	[SerializeField]
 	private float speed;
@@ -39,6 +45,8 @@ public abstract class Character : MonoBehaviour {
 
 		// For HealthBar "healthValue","maxHealth"
 		health.Initilized(initHealth, initHealth);
+
+		mana.Initilized(initMana, initMana);
 
 		myRigidbody = GetComponent<Rigidbody2D>();
 		myAnimator = GetComponent<Animator>();

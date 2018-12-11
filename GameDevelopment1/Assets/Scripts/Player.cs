@@ -18,8 +18,12 @@ public class Player : Character
     private float specialTime = 3f;
     private bool isSpecialActive;
 
-    // Use this for initialization
-    protected override void Start()
+	public bool isManaFinish;
+	public bool isManaFull;
+
+
+	// Use this for initialization
+	protected override void Start()
     {
         base.Start();
         redPotCount = 5;
@@ -29,27 +33,33 @@ public class Player : Character
     // Update is called once per frame
     protected override void Update()
     {
+		ManaBarStats();
 
-        timer += Time.deltaTime;
+		timer += Time.deltaTime;
 
-        if (Input.GetKey(KeyCode.Space))
-        {
-            timer = 0;
-            isSpecialActive = true;
-            shield.SetActive(true);
-        }
-        if (isSpecialActive == true)
-        {
-            myRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+		if (isManaFinish == false)
+		{
+			if (Input.GetKeyDown(KeyCode.Space))
+			{
+				timer = 0;
+				isSpecialActive = true;
+				shield.SetActive(true);
+				
+			}
+			if (isSpecialActive == true)
+			{
+				myRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
 
-            if (timer >= specialTime)
-            {
-                timer = 0;
-                isSpecialActive = false;
-                shield.SetActive(false);
-                myRigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
-            }
-        }
+				if (timer >= specialTime)
+				{
+					timer = 0;
+					mana.MyCurrentValue -= 10;
+					isSpecialActive = false;
+					shield.SetActive(false);
+					myRigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
+				}
+			}
+		}	
 
         if (Input.GetKey(KeyCode.R))
         {
@@ -57,15 +67,46 @@ public class Player : Character
             Application.LoadLevel(Application.loadedLevel);
         }
 
+
         GetInput();
 
         base.Update();
 
         CamMove.CameraShift();
-    }
 
 
-    private void GetInput()
+		
+
+	}
+
+	void ManaBarStats()
+	{
+			if (mana.MyCurrentValue == 50)
+			{
+				isManaFull = true;
+			}
+			else if (mana.MyCurrentValue < 50)
+			{
+				isManaFull = false;
+			}
+		
+			if (mana.MyCurrentValue == 0)
+			{
+				isManaFinish = true;
+			}
+			else if (mana.MyCurrentValue != 0)
+			{
+				isManaFinish = false;
+			}
+
+			if (Input.GetKeyDown(KeyCode.G) && mana.MyCurrentValue < 50 && bluePotCount > 0)
+			{
+				mana.MyCurrentValue += 10;
+				bluePotCount -= 1;
+			}
+	}
+
+	private void GetInput()
     {
 
         direction = Vector2.zero;
