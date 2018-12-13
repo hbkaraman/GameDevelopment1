@@ -15,6 +15,8 @@ TagManager:
   - Boss
   - Enviroment
   - gold
+  - bluePot
+  - redPot
   layers:
   - Default
   - TransparentFX

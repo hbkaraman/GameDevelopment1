@@ -197,6 +197,14 @@ public class Player : Character
             isDoorOpen = true;
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Door")
+        {
+            isDoorOpen = false;
+        }
+    }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

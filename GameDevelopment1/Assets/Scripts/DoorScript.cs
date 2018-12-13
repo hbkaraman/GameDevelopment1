@@ -29,11 +29,22 @@ public class DoorScript : MonoBehaviour {
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
+            anim.speed = 1;
+            anim.Play("KapiOpen");
             anim.enabled = true;
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            anim.speed = 1;
+            anim.Play("KapiKapali");
+        }
+    }
+
 }
