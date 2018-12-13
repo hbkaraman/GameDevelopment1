@@ -69,7 +69,16 @@ public abstract class Character : MonoBehaviour {
 		// Playerı Hareket ettirmek için 
 		myRigidbody.velocity = direction.normalized * speed;
 
-		AnimateMovement(direction);
+		if(direction.x != 0 || direction.y != 0)
+		{
+			AnimateMovement(direction);
+		}
+		else
+		{
+			myAnimator.SetLayerWeight(1, 0);
+		}
+
+		
 	}
 
 	/*public void HandleLayers()
@@ -82,6 +91,8 @@ public abstract class Character : MonoBehaviour {
 
 	public void AnimateMovement(Vector2 direction)
 	{
+		myAnimator.SetLayerWeight(1, 1);
+
 		myAnimator.SetFloat("x", + direction.x);
 		myAnimator.SetFloat("y", + direction.y);
 
