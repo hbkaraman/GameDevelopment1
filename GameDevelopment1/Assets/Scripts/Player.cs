@@ -20,6 +20,7 @@ public class Player : Character
 
 	public bool isManaFinish;
 	public bool isManaFull;
+	private bool isSpecialUsed = false;
 
 
 	// Use this for initialization
@@ -39,16 +40,15 @@ public class Player : Character
 
 		if (isManaFinish == false)
 		{
-			if (Input.GetKeyDown(KeyCode.Space))
+			if (Input.GetKeyDown(KeyCode.Space)&& isSpecialActive==false)
 			{
 				timer = 0;
 				isSpecialActive = true;
-				shield.SetActive(true);
-				
 			}
 			if (isSpecialActive == true)
 			{
 				myRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+				shield.SetActive(true);
 
 				if (timer >= specialTime)
 				{
@@ -57,8 +57,9 @@ public class Player : Character
 					isSpecialActive = false;
 					shield.SetActive(false);
 					myRigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
+					}
 				}
-			}
+			
 		}	
 
         if (Input.GetKey(KeyCode.R))
