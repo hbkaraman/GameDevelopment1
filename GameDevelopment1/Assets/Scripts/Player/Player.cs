@@ -14,16 +14,16 @@ public class Player : Character
     public int bluePotCount;
     public bool redPotUsed;
 
+	public bool isManaFinish;
+	public bool isManaFull;
+
     private float timer;
     private float specialTime = 3f;
     private bool isSpecialActive;
 
-	public bool isManaFinish;
-	public bool isManaFull;
 
-
-	// Use this for initialization
-	protected override void Start()
+    // Use this for initialization
+    protected override void Start()
     {
         base.Start();
         redPotCount = 5;

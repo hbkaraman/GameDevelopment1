@@ -30,10 +30,6 @@ public class EnemyScript : MonoBehaviour {
 
 	private void Update()
 	{
-
-
-
-
 		healthgroup.alpha = 1;
 
 		if (enemyHealth.MyCurrentValue <= 0 )
@@ -42,7 +38,6 @@ public class EnemyScript : MonoBehaviour {
 			Destroy(gameObject);
             lootChance = Random.Range(0, 10);
 		}
-        Debug.Log(lootChance);
         if (lootChance == 4 || lootChance == 5)
         {
             Instantiate(gold, transform.position, Quaternion.identity);
