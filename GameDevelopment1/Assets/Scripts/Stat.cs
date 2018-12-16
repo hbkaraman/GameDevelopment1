@@ -6,7 +6,6 @@ using TMPro;
 
 public class Stat : MonoBehaviour
 {
-
     public float MyMaxValue { get; set; }
 
     [SerializeField]

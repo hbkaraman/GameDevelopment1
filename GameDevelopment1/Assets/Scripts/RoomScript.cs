@@ -12,17 +12,10 @@ public class RoomScript : MonoBehaviour
 
     public DoorScript[] doors;
 
-    // Drag & drop the objects in the inspector
-    public EnemyDestroyDispatcher[] OnDestroyDispatchers;
+    public EnemyScript[] OnDestroyDispatchers;
 
-    // You will be able to add a function once all the objects are destroyed
     public UnityEngine.Events.UnityEvent OnAllObjectsDestroyed;
 
-    void Start()
-    {
-        for (int i = 0; i < OnDestroyDispatchers.Length; ++i)
-            OnDestroyDispatchers[i].OnObjectDestroyed += OnObjectDestroyed;
-    }
 
     void Update()
     {
@@ -30,33 +23,23 @@ public class RoomScript : MonoBehaviour
         {
             roomFinished = true;
         }
+
         if (roomEntered == true && roomFinished == false)
         {
-            //doors[doorNum].doorCanOpen = false;
             for (int i = 0; i < doors.Length; i++)
                 doors[i].doorCanOpen = false;
+
+            for (int a = 0; a < OnDestroyDispatchers.Length; a++)
+            {
+                OnDestroyDispatchers[a].gameObject.SetActive(true);
+            }
+
         }
+
         if (roomEntered == true && roomFinished == true)
         {
             for (int i = 0; i < doors.Length; i++)
                 doors[i].doorCanOpen = true;
-        }
-    }
-
-    private void OnObjectDestroyed(GameObject destroyedObject)
-    {
-        CheckAllObjectsAreDestroyed();
-    }
-
-    private void CheckAllObjectsAreDestroyed()
-    {        
-        for (int i = 0; i < OnDestroyDispatchers.Length; ++i)
-        {
-            if (OnDestroyDispatchers[i] != null || OnDestroyDispatchers[i].gameObject != null)
-            {
-                destroyCount += 1;
-                return;
-            }
         }
     }
 

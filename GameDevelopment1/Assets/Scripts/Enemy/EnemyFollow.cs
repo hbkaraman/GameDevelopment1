@@ -10,6 +10,11 @@ public class EnemyFollow : MonoBehaviour {
     public bool playerTriggered;
     public GameObject enemy;
 
+    private void Awake()
+    {
+        player = GameObject.FindWithTag("Player");
+    }
+
     void Start () {
         playerOffset = new Vector3(Random.Range(0,2),Random.Range(0,2), 44.4f);
     }
