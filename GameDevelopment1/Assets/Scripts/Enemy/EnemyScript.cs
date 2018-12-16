@@ -30,6 +30,10 @@ public class EnemyScript : MonoBehaviour {
 
 	private void Update()
 	{
+
+
+
+
 		healthgroup.alpha = 1;
 
 		if (enemyHealth.MyCurrentValue <= 0 )

@@ -20,7 +20,6 @@ public class Player : Character
 
 	public bool isManaFinish;
 	public bool isManaFull;
-	private bool isSpecialUsed = false;
 
 
 	// Use this for initialization
@@ -213,7 +212,7 @@ public class Player : Character
         {
             if (isSpecialActive == false)
             {
-                TakeDamage(10);
+               // TakeDamage(10);
             }
         }
 
@@ -221,7 +220,7 @@ public class Player : Character
         {
             if (isSpecialActive == false)
             {
-                TakeDamage(30);
+                //TakeDamage(30);
             }
         }
     }
