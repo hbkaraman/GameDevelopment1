@@ -1,0 +1,982 @@
+fileFormatVersion: 2
+guid: 19b39faf8be9f0f48b24ad16d36176d7
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GrootWalkAnim_0
+    21300002: GrootWalkAnim_1
+    21300004: GrootWalkAnim_2
+    21300006: GrootWalkAnim_3
+    21300008: GrootWalkAnim_4
+    21300010: GrootWalkAnim_5
+    21300012: GrootWalkAnim_6
+    21300014: GrootWalkAnim_7
+    21300016: GrootWalkAnim_8
+    21300018: GrootWalkAnim_9
+    21300020: GrootWalkAnim_10
+    21300022: GrootWalkAnim_11
+    21300024: GrootWalkAnim_12
+    21300026: GrootWalkAnim_13
+    21300028: GrootWalkAnim_14
+    21300030: GrootWalkAnim_15
+    21300032: GrootWalkAnim_16
+    21300034: GrootWalkAnim_18
+    21300036: GrootWalkAnim_19
+    21300038: GrootWalkAnim_21
+    21300040: GrootWalkAnim_22
+    21300042: GrootWalkAnim_23
+    21300044: GrootWalkAnim_24
+    21300046: GrootWalkAnim_25
+    21300048: GrootWalkAnim_26
+    21300050: GrootWalkAnim_27
+    21300052: GrootWalkAnim_28
+    21300054: GrootWalkAnim_29
+    21300056: GrootWalkAnim_30
+    21300058: GrootWalkAnim_31
+    21300060: GrootWalkAnim_32
+    21300062: GrootWalkAnim_33
+    21300064: GrootWalkAnim_34
+    21300066: GrootWalkAnim_35
+    21300068: GrootWalkAnim_36
+    21300070: GrootWalkAnim_37
+    21300072: GrootWalkAnim_38
+    21300074: GrootWalkAnim_39
+    21300076: GrootWalkAnim_40
+    21300078: GrootWalkAnim_42
+    21300080: GrootWalkAnim_43
+    21300082: GrootWalkAnim_44
+    21300084: GrootWalkAnim_45
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GrootWalkAnim_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1267
+        width: 164
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b2f128043210844a60e9095493617e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1268
+        width: 172
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82b9a6b66c717b4999d4596e041eefb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_2
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1268
+        width: 164
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd188ff480290f41bee09c03f47b322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_4
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1268
+        width: 171
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94de481aa8c907648b33fea2c45f89d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_5
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1267
+        width: 163
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd60cf804d839f488bc889e81a6f97b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_6
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1267
+        width: 163
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa5c309c8207244f940b61fb5a00c6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_7
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 1267
+        width: 165
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429a34f79ac0f274fba10e30e13499e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_8
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1267
+        width: 163
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f14731483bacd428ed6bbb2fcce4a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_9
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 912
+        width: 157
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649107af1c01a1647be43ba308bf381c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_10
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 913
+        width: 169
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f45fcf8f0424b43b21864db35a5a9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_11
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 913
+        width: 161
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76ab519bba662c4483794ef4309a6ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_12
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 912
+        width: 173
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3eff29f26e831b489aaa783737e8f29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_13
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 912
+        width: 165
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23eb444c5e004242b68709ca80450e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_14
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 911
+        width: 166
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113e1f8e268e88849a8561bf633029d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_15
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 911
+        width: 166
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5309625f5ced9409c9eb0a49368547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_16
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 912
+        width: 165
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1eeb5ece4dfae46849091f4f9b47dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_18
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 521
+        width: 162
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d44c85da2c89d49a8995953a1bb137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_19
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 521
+        width: 158
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fb91d60c4095d4ba93d216e85f2202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_21
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 521
+        width: 151
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e551b39d2085e048806ee904c1feea5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_22
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 521
+        width: 149
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498eaaa1adeddf046a0629b317d33201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_23
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 521
+        width: 151
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b82facb0959ec4aa04b87a40445de8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_24
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 521
+        width: 158
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74f6db3efa1736409e6b8c7386642f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_25
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 521
+        width: 163
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15299deed0595644bf74ba263b38386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_26
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 521
+        width: 154
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fffa5ce48ef9cb47ad920f22fe3be65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_27
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 521
+        width: 147
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abfffaa27fef32543af59c09f8afa2c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_28
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 521
+        width: 150
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ecf1259cff0a242a28e453b78fa944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_29
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 521
+        width: 156
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602262885bb9d6840af5dd5b3b1c017e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_30
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 521
+        width: 149
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b3688068503704a84b94ec18f1d1cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_31
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 521
+        width: 150
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0016c08fe9be1c84594486da5c8772d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_32
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 153
+        width: 149
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd7287dc1dd38142adb54d211e8326c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_33
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 153
+        width: 149
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da8dc22efafeba4ea77e1c0db791358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_34
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 153
+        width: 156
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228bd213675a6d94595a20c525542a1b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_35
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 153
+        width: 150
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca71853122f39f343a5b3e967826a78b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_36
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 153
+        width: 147
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a027dcfe2632a3542bcce1fc0f5168a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_37
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 153
+        width: 153
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444b5be65a6d5f6489e54b0bb19506c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_38
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 153
+        width: 163
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd45a2c3bf208e94db0dbe073fc9a4e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_39
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 153
+        width: 156
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9526532f5c6004098f95eb2357ba61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_40
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 153
+        width: 151
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8115005a32505514d9b9bb3bf11ddad3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_42
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 153
+        width: 149
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9078a73946edfaa41953cf7c9e39f727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_43
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 153
+        width: 151
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaefdc69385519b45825c46641a2ce04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_44
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 153
+        width: 158
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df658240d127f6d409f0533d39456cec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootWalkAnim_45
+      rect:
+        serializedVersion: 2
+        x: 2147
+        y: 153
+        width: 163
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6e7e3208400544b9ee36d87f8a0115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 16465a4ecf97dce41a6d0eac8f67db21
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

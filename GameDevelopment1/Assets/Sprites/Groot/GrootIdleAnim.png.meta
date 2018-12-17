@@ -1,0 +1,755 @@
+fileFormatVersion: 2
+guid: 421ed7f95f0121744b8874d54fdaea5c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GrootIdleAnim_0
+    21300002: GrootIdleAnim_1
+    21300004: GrootIdleAnim_2
+    21300006: GrootIdleAnim_3
+    21300008: GrootIdleAnim_4
+    21300010: GrootIdleAnim_5
+    21300012: GrootIdleAnim_6
+    21300014: GrootIdleAnim_7
+    21300016: GrootIdleAnim_8
+    21300018: GrootIdleAnim_9
+    21300020: GrootIdleAnim_10
+    21300022: GrootIdleAnim_11
+    21300024: GrootIdleAnim_12
+    21300026: GrootIdleAnim_13
+    21300028: GrootIdleAnim_14
+    21300030: GrootIdleAnim_15
+    21300032: GrootIdleAnim_16
+    21300034: GrootIdleAnim_17
+    21300036: GrootIdleAnim_18
+    21300038: GrootIdleAnim_19
+    21300040: GrootIdleAnim_20
+    21300042: GrootIdleAnim_21
+    21300044: GrootIdleAnim_22
+    21300046: GrootIdleAnim_23
+    21300048: GrootIdleAnim_24
+    21300050: GrootIdleAnim_25
+    21300052: GrootIdleAnim_26
+    21300054: GrootIdleAnim_27
+    21300056: GrootIdleAnim_28
+    21300058: GrootIdleAnim_29
+    21300060: GrootIdleAnim_30
+    21300062: GrootIdleAnim_31
+    21300064: GrootIdleAnim_32
+    21300066: GrootIdleAnim_33
+    21300068: GrootIdleAnim_34
+    21300070: GrootIdleAnim_35
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GrootIdleAnim_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 915
+        width: 159
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8098b26c640014199a762dcc31abef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_1
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 916
+        width: 177
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 599ed48c947e3174ba92f7e15684d881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_2
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 915
+        width: 182
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb432bffe2cf2e44e8d8fb095f652e07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_3
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 915
+        width: 178
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979e21d3a49ea2947a9988355879444a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_4
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 916
+        width: 181
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bee42cbe1863594a9098fad6813464c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_5
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 916
+        width: 161
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb48d728ec20e54a90efe99634988d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_6
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 915
+        width: 161
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9a7a52bed81464d9ba9916ed2efeb5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_7
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 916
+        width: 159
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa93ddedfa0131b49b5c98db7b13960d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_8
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 604
+        width: 156
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a611aa3a4386ba419d66c1ada8cff28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_9
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 604
+        width: 154
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a96e889ee8438549a179ff1e176897b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_10
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 604
+        width: 156
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada0c3a25a71f0d42adaba5289d98b3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_12
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 604
+        width: 155
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2bed0d16a5d3a40b839c65ab77aa95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_14
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 604
+        width: 154
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa7a88ff1ec8534ea0ef0650951277a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_15
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 604
+        width: 153
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367d52dd5a9ee8346b7520f331d01112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_16
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 604
+        width: 156
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c649359ec37f44a8b64a2cc411839d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_17
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 604
+        width: 154
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ceff3e8dd369344b026a8502cd6a56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_18
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 304
+        width: 154
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e92f89797eddc48970754072ec79a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_19
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 304
+        width: 156
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6f7af585a632544afb705b7bf6fb6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_20
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 304
+        width: 153
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1704b3190fd5dbd4388aeee8bcf98ea7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_22
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 304
+        width: 154
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5c0bb51f843e847802c326d7f8f974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_24
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 304
+        width: 155
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389355cc7c25dd14f83ed732ba6346bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_26
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 304
+        width: 156
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d2d06964da03942beaca76d1a864e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_27
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 304
+        width: 154
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4a04ec41f0f5f4e935dc48b3aaa082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_28
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 304
+        width: 156
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc65f401d4704c41b1d6352d0f192e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_29
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 4
+        width: 155
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d98d9938a2bb7948ab2c71d146efc5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_30
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 4
+        width: 153
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f223f1b8a8e7d54a9a1b744571853a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_31
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 4
+        width: 152
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e807c553d17bea439885fe33720cd93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_32
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 4
+        width: 154
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e58c471ec43b21428dbe321d8c7aa7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_33
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 4
+        width: 154
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd9de4e927062f4fa9291aab2448de3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_34
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 4
+        width: 152
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2349357112f3594e884b4831c591979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrootIdleAnim_35
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 4
+        width: 154
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1466cb76f02a07e4787e5e481a52ef81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: cf2d418ccc73ada448653157ab5f0b22
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

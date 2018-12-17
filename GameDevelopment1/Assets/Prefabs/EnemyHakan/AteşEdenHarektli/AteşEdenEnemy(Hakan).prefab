@@ -195,6 +195,9 @@ MonoBehaviour:
   healthgroup: {fileID: 225222534608683904}
   enemyHealth: {fileID: 114131245081007008}
   health: 35
+  alphaLevel: 0
+  rS: {fileID: 0}
+  Enabled: 0
   deathEffect: {fileID: 1110264763428426, guid: 5487e197c27fe54408d2e6455649c432,
     type: 2}
   explosion: {fileID: 1110264763428426, guid: 5487e197c27fe54408d2e6455649c432, type: 2}
