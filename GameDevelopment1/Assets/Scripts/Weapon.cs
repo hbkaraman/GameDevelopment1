@@ -8,6 +8,8 @@ public class Weapon : MonoBehaviour {
 	private float timeBtwShots;
 	public float startTimeBtwShots;
 
+	public Transform shotPoint;
+
 	public GameObject bullet;
     public Player player;
 
@@ -22,7 +24,7 @@ public class Weapon : MonoBehaviour {
 	// Update is called once per frame
 	void Update()
 	{
-		
+		/*
 			if (Input.GetKey(KeyCode.DownArrow))
 			{
 				bulletDirection = Quaternion.Euler(0f, 0f, 270);
@@ -43,7 +45,30 @@ public class Weapon : MonoBehaviour {
 				bulletDirection = Quaternion.Euler(0f, 0f, 180);
 				ShootB();
 			}
-		
+		*/
+
+
+
+
+
+		Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+		float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+		transform.rotation = Quaternion.Euler(0f, 0f, rotZ);
+
+		if (timeBtwShots <= 0)
+		{
+			if (Input.GetMouseButton(0))
+			{
+				//Instantiate(shotEffect, shotPoint.position, Quaternion.identity);
+				//camAnim.SetTrigger("shake");
+				Instantiate(bullet, shotPoint.position, transform.rotation);
+				timeBtwShots = startTimeBtwShots;
+			}
+		}
+		else
+		{
+			timeBtwShots -= Time.deltaTime;
+		}
 	}
 
 		void ShootB()

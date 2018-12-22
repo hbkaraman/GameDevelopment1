@@ -1,0 +1,1443 @@
+fileFormatVersion: 2
+guid: 69c8772c4642d424681d726635b308ac
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ShootEnemyAnim2_0
+    21300002: ShootEnemyAnim2_1
+    21300004: ShootEnemyAnim2_2
+    21300006: ShootEnemyAnim2_3
+    21300008: ShootEnemyAnim2_4
+    21300010: ShootEnemyAnim2_5
+    21300012: ShootEnemyAnim2_6
+    21300014: ShootEnemyAnim2_7
+    21300016: ShootEnemyAnim2_8
+    21300018: ShootEnemyAnim2_9
+    21300020: ShootEnemyAnim2_10
+    21300022: ShootEnemyAnim2_11
+    21300024: ShootEnemyAnim2_12
+    21300026: ShootEnemyAnim2_13
+    21300028: ShootEnemyAnim2_14
+    21300030: ShootEnemyAnim2_15
+    21300032: ShootEnemyAnim2_16
+    21300034: ShootEnemyAnim2_17
+    21300036: ShootEnemyAnim2_18
+    21300038: ShootEnemyAnim2_19
+    21300040: ShootEnemyAnim2_20
+    21300042: ShootEnemyAnim2_21
+    21300044: ShootEnemyAnim2_22
+    21300046: ShootEnemyAnim2_23
+    21300048: ShootEnemyAnim2_24
+    21300050: ShootEnemyAnim2_25
+    21300052: ShootEnemyAnim2_26
+    21300054: ShootEnemyAnim2_27
+    21300056: ShootEnemyAnim2_28
+    21300058: ShootEnemyAnim2_29
+    21300060: ShootEnemyAnim2_30
+    21300062: ShootEnemyAnim2_31
+    21300064: ShootEnemyAnim2_32
+    21300066: ShootEnemyAnim2_33
+    21300068: ShootEnemyAnim2_34
+    21300070: ShootEnemyAnim2_35
+    21300072: ShootEnemyAnim2_36
+    21300074: ShootEnemyAnim2_37
+    21300076: ShootEnemyAnim2_38
+    21300078: ShootEnemyAnim2_39
+    21300080: ShootEnemyAnim2_40
+    21300082: ShootEnemyAnim2_41
+    21300084: ShootEnemyAnim2_42
+    21300086: ShootEnemyAnim2_43
+    21300088: ShootEnemyAnim2_44
+    21300090: ShootEnemyAnim2_45
+    21300092: ShootEnemyAnim2_46
+    21300094: ShootEnemyAnim2_47
+    21300096: ShootEnemyAnim2_48
+    21300098: ShootEnemyAnim2_49
+    21300100: ShootEnemyAnim2_50
+    21300102: ShootEnemyAnim2_51
+    21300104: ShootEnemyAnim2_52
+    21300106: ShootEnemyAnim2_53
+    21300108: ShootEnemyAnim2_54
+    21300110: ShootEnemyAnim2_55
+    21300112: ShootEnemyAnim2_56
+    21300114: ShootEnemyAnim2_57
+    21300116: ShootEnemyAnim2_58
+    21300118: ShootEnemyAnim2_59
+    21300120: ShootEnemyAnim2_60
+    21300122: ShootEnemyAnim2_61
+    21300124: ShootEnemyAnim2_62
+    21300126: ShootEnemyAnim2_63
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1727
+        width: 193
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7a0d67ad65a704093c651a702e8067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_1
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1727
+        width: 178
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1655fdaf62e8186439a5daabfb21e59a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_2
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1726
+        width: 169
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1714b68862dcb43b0a41e1f426747a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_3
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1726
+        width: 166
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c195037e09f6f4baedf4772c888510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_4
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1726
+        width: 162
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6bd8872c751874fa67ccdb735479ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_5
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 1726
+        width: 161
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91cc2324c6e8abb43bec901d01ab9206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_6
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1727
+        width: 158
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72caf5f8d689ad64e88062329db0104f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_7
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1726
+        width: 164
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a956b3c346100e5429ea4bf315217596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_8
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 1726
+        width: 161
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031c3a0652fad8e439965542a48c4cd0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_9
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1481
+        width: 157
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c597959fc43b8045b2d2945a517c496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_10
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1482
+        width: 170
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90ebbc72215c5248a7880d9408cafee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_11
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1482
+        width: 170
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff6c282d29d8fc42871754c1aa8af22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_12
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1484
+        width: 174
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607d86a4b743e3d43a4c05fa1c552bc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_13
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1482
+        width: 178
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75dc2db44f80177469ac95b3c450176b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_14
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1482
+        width: 182
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4776f8cd4bc61a4aa507a604035f38c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_15
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 1482
+        width: 190
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4788f187bbd134b9ea42ba2dd49f5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_16
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1248
+        width: 193
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208701fdd57fbe248ad1ab5397684397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_17
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1248
+        width: 202
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87581fc01b576fc4896a7d42985f3346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_18
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 1248
+        width: 212
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e72922d8340d74fa36606d30c31695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_19
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1249
+        width: 218
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97688ff6caa3a174fb2a14633d2161d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_20
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 1248
+        width: 224
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb953dd69d3235941b2fe769a976bc7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_21
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 1247
+        width: 226
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d736478f0a8e11d4da7c278648b0840f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_22
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 1248
+        width: 229
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921c8d1153c2dac4a8b5fd6f615cbb92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_23
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 1249
+        width: 230
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ff809f459898a42871dbe0d6a8a5c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_24
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1004
+        width: 232
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf47a67c2f25ec242add483b73d22565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_25
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1004
+        width: 230
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b424d7ae0a80724b83d15ae3941a5e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_26
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1005
+        width: 229
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adef2080a075ecc4b9262e716ecab5f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_27
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1004
+        width: 217
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07505b2e681dd148b9b03cbd016d230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_28
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1004
+        width: 192
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3386c337943e39c4ba8bb2e147635848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_29
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 1005
+        width: 192
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfef7a5c1410bd4ab0d59765438f170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_30
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 1004
+        width: 192
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbb7657e9b8c0f4da56bc1ca2131312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_31
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1004
+        width: 192
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590e7f6f5a2973f40b6e22a548188b80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_32
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 727
+        width: 161
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b52281ba732144fa0f4cd6d8660469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_33
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 727
+        width: 164
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4d6095a46dd834481a8f75557213f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_34
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 728
+        width: 158
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3671ac10906b85c4191f440f2f132e6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_35
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 727
+        width: 161
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e8f30a88eee6748b510bf5071a9aa1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_36
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 727
+        width: 162
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d953db337be9c4fad57566a3422f99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_37
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 727
+        width: 166
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4cd17363f7dde4c9e8486109b32ac1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_38
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 727
+        width: 169
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a59598a503a3e4ea15021f5cfdccae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_39
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 728
+        width: 178
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8f5240e6c3e14468bfe0b6b0556c03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_40
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 728
+        width: 193
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84462bd93084b714d8a51630ffd54298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_41
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 483
+        width: 190
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ece2a5bdba51084a87a617c2b9f50d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_42
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 483
+        width: 182
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e680e03ca82e7f408ef765bb6ed9108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_43
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 483
+        width: 178
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9796fe9b71bc94da2a4d9286442fb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_44
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 485
+        width: 174
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2a277cbe2e68e488b22d42e1980234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_45
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 483
+        width: 170
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560e7d518653afa44954863ff889fde1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_46
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 483
+        width: 170
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c013a51692f4164caa79b24ccfc97ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_47
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 482
+        width: 157
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2979d94635b36043ab18b142b4a6513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_48
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 262
+        width: 230
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d1caa739700c543924fc9cc2fefe50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_49
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 261
+        width: 229
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f16760a6f388e4eb7ed4f8fae45df0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_50
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 260
+        width: 226
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22b2fbaada3dd44f9dbee6c2c9995e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_51
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 261
+        width: 224
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5549887251e4b3e41ac4d304b26d28b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_52
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 262
+        width: 218
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99153109d60906b4896765273db29e5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_53
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 261
+        width: 212
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a43be90e8cb396409a5d62a442d2f79
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_54
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 261
+        width: 202
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d410b7141b098584e931f2e3c6755107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_55
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 261
+        width: 193
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081b0cf30c5cfb14196c608d4cc579ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_56
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 17
+        width: 192
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3badaf7f8f77e4e92d55b199aa8d2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_57
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 17
+        width: 192
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe7d53f4dc0e524991458c06c788eb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_58
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 18
+        width: 192
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b7fdd859cf8694aa7911c0bbac4377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_59
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 17
+        width: 192
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c5c34fdab5f1f43b635a3e012a45f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_60
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 17
+        width: 217
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0523b0584e90925468e692203a31139f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_61
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 18
+        width: 229
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c026dc521a5dc41bb26768728d1e70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_62
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 17
+        width: 230
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ab790ed2513374086d874615d213fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShootEnemyAnim2_63
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 17
+        width: 232
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924561a2238e2c349b82ad8a6804d512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 75632629cd4c3264aa09427a98ca1b2d
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
