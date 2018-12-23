@@ -20,11 +20,6 @@ public class RoomScript : MonoBehaviour
 
     public UnityEngine.Events.UnityEvent OnAllObjectsDestroyed;
 
-    private void Start()
-    {
-
-    }
-
     void Update()
     {
         if (destroyCount == OnDestroyDispatchers.Length)
