@@ -27,8 +27,7 @@ public class EnemyScript : MonoBehaviour
 
     private int lootChance;
 
-
-    private void Start()
+	private void Start()
     {
         enemyHealth.Initilized(health, health);
     }
