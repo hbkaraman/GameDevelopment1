@@ -41,8 +41,6 @@ public class BulletScript : MonoBehaviour {
 		   DestroyProjectile();
 		}
 
-
-
 		//transform.Translate(Vector2.right* speed * Time.deltaTime);
 		//Debug.Log("rot"+ this.transform.rotation.eulerAngles);
 		//transform.Translate(transform.rotation.eulerAngles * speed * Time.deltaTime);
