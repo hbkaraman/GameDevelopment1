@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShootingEnemyScript : MonoBehaviour {
 
-	public float speed;
+	
 	public float stoppingDistance;
 	public float retreatDistance;
 
@@ -18,9 +18,13 @@ public class ShootingEnemyScript : MonoBehaviour {
 
 	private int Randomize;
 
+	private EnemyScript Enemy;
+
+
 	void Start ()
 	{
 		player = GameObject.FindGameObjectWithTag("Player").transform;
+		Enemy = GetComponent<EnemyScript>();
 
 		timeBtwShoots = startTimeBtwShoots;
 
@@ -36,7 +40,7 @@ public class ShootingEnemyScript : MonoBehaviour {
 	{
 		if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
 		{
-			transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+			transform.position = Vector2.MoveTowards(transform.position, player.position, Enemy.speed * Time.deltaTime);
 		}
 		else if (Vector2.Distance(transform.position, player.position) < stoppingDistance && Vector2.Distance(transform.position, player.position) > retreatDistance)
 		{
@@ -45,7 +49,7 @@ public class ShootingEnemyScript : MonoBehaviour {
 		}
 		else if (Vector2.Distance(transform.position, player.position) < retreatDistance)
 		{
-			transform.position = Vector2.MoveTowards(transform.position, player.position, -speed / 2 * Time.deltaTime);
+			transform.position = Vector2.MoveTowards(transform.position, player.position, -Enemy.speed * Time.deltaTime);
 		}
 	}
 

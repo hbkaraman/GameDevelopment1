@@ -98,18 +98,5 @@ public abstract class Character : MonoBehaviour {
 
 	}
 
-	public virtual void TakeDamage(float damage)
-	{
-		health.MyCurrentValue -= damage;
-
-		if (health.MyCurrentValue <= 0)
-		{
-			LossScene.enabled = true;
-
-			if(LossScene.enabled == true)
-			{
-				Time.timeScale = 0;
-			}
-		}
-	}
+	
 }

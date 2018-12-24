@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 114086688702572952}
   - component: {fileID: 70854348856852040}
   - component: {fileID: 95377535666886914}
+  - component: {fileID: 50568003053792134}
   m_Layer: 8
   m_Name: "PatrolluAte\u015FEdenEnemy(Hakan)"
   m_TagString: Enemy
@@ -157,6 +158,26 @@ Transform:
   m_Father: {fileID: 4200158483422346}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50568003053792134
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1263093426967844}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 13
+  m_LinearDrag: 10
+  m_AngularDrag: 10
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!70 &70854348856852040
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -201,7 +222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded7472b0a337264caf4f5ee51daef1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
   startWaitTime: 1
   moveSpot: {fileID: 0}
   minX: -11
@@ -227,6 +247,9 @@ MonoBehaviour:
   healthgroup: {fileID: 225222534608683904}
   enemyHealth: {fileID: 114131245081007008}
   health: 35
+  firstSpeed: 4
+  speed: 4
+  startStunTime: 0
   alphaLevel: 0
   rS: {fileID: 0}
   Enabled: 0
@@ -376,7 +399,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300032, guid: 69c8772c4642d424681d726635b308ac, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.990566, g: 0.990566, b: 0.990566, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

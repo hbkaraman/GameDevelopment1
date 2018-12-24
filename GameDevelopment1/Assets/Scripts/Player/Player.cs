@@ -135,7 +135,24 @@ public class Player : Character
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+
+	public virtual void TakeDamage(float damage)
+	{
+		health.MyCurrentValue -= damage;
+		Instantiate(destroyEffect, transform.position, Quaternion.identity);
+
+		if (health.MyCurrentValue <= 0)
+		{
+			LossScene.enabled = true;
+
+			if (LossScene.enabled == true)
+			{
+				Time.timeScale = 0;
+			}
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "room1")
         {
@@ -169,7 +186,6 @@ public class Player : Character
             if (isSpecialActive == false)
             {
                 TakeDamage(10);
-                Instantiate(destroyEffect, transform.position, Quaternion.identity);
             }
         }
 
@@ -224,4 +240,9 @@ public class Player : Character
             }
         }
     }
+
+
+
+
+
 }

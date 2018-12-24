@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PatrolShootingEnemy : MonoBehaviour {
 	
-	public float speed;
+	
 	private float waitTime;
 	public float startWaitTime;
 
@@ -30,13 +30,18 @@ public class PatrolShootingEnemy : MonoBehaviour {
 	private bool isShoot;
 	private bool isIdle;
 
+	private EnemyScript Enemy;
+
+	private Rigidbody2D rb;
+
 
 
 
 	void Start ()
 	{
-
+		Enemy = GetComponent<EnemyScript>();
 		Anim = GetComponent<Animator>();
+		rb = GetComponent<Rigidbody2D>();
 
 		waitTime = startWaitTime;
 
@@ -66,7 +71,9 @@ public class PatrolShootingEnemy : MonoBehaviour {
 
 	void Movement()
 	{
-		transform.position = Vector2.MoveTowards(transform.position, moveSpot.position, speed * Time.deltaTime);
+
+		rb.MovePosition(Vector2.MoveTowards(transform.position, moveSpot.position, Enemy.speed * Time.deltaTime));
+	
 
 		if (Vector2.Distance(transform.position, moveSpot.position) < 0.2f)
 		{

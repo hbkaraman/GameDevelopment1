@@ -245,6 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startTimeBtwShots: 0.4
+  shotPoint: {fileID: 0}
   bullet: {fileID: 1327893952493908, guid: 42a6d3be862fd0b4089407b49c75fb4e, type: 2}
   player: {fileID: 114331123193911628}
 --- !u!212 &212113815176607594

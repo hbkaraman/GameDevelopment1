@@ -6,7 +6,6 @@ using UnityEngine;
 public class MeeleEnemy : MonoBehaviour {
 
 	private Transform target;
-	public float speed;
 
 	private Animator anim;
 	private Vector2 direction;
@@ -34,9 +33,13 @@ public class MeeleEnemy : MonoBehaviour {
 
 	private Rigidbody2D rb;
 
+	private EnemyScript Enemy;
+
+
 
 	private void Start()
 	{
+		Enemy = GetComponent<EnemyScript>();
 		anim = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
 	}
@@ -69,7 +72,7 @@ public class MeeleEnemy : MonoBehaviour {
 
 			if (Vector2.Distance(transform.position, target.position) > StopDistan)
 			{
-				rb.MovePosition(Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime));
+				rb.MovePosition(Vector2.MoveTowards(transform.position, target.position, Enemy.speed * Time.deltaTime));
 			}
 
 			float distance = Vector2.Distance(target.position, transform.position);
@@ -88,7 +91,6 @@ public class MeeleEnemy : MonoBehaviour {
 						for (int i = 0; i < playerToDamage.Length; i++)
 						{
 							playerToDamage[i].GetComponent<Player>().TakeDamage(damage);
-							Instantiate(damageEffect, target.position, Quaternion.identity);
 						}
 
 						
