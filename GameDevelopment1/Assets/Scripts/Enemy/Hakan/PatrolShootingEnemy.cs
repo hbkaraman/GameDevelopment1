@@ -72,10 +72,11 @@ public class PatrolShootingEnemy : MonoBehaviour {
 	void Movement()
 	{
 
-		rb.MovePosition(Vector2.MoveTowards(transform.position, moveSpot.position, Enemy.speed * Time.deltaTime));
-	
+        //rb.MovePosition(Vector2.MoveTowards(transform.position, moveSpot.position, Enemy.speed * Time.deltaTime));
+        transform.position=(Vector2.MoveTowards(transform.position, moveSpot.position, Enemy.speed * Time.deltaTime));
 
-		if (Vector2.Distance(transform.position, moveSpot.position) < 0.2f)
+
+        if (Vector2.Distance(transform.position, moveSpot.position) < 0.2f)
 		{
 			if (waitTime <= 0)
 			{
