@@ -18,6 +18,12 @@ TagManager:
   - bluePot
   - redPot
   - Kalkan
+  - room5
+  - room6
+  - room7
+  - room8
+  - room9
+  - room10
   layers:
   - Default
   - TransparentFX

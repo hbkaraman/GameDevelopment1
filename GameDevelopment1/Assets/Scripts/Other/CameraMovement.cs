@@ -11,6 +11,12 @@ public class CameraMovement : MonoBehaviour
     public Transform room2;
     public Transform room3;
     public Transform room4;
+    public Transform room5;
+    public Transform room6;
+    public Transform room7;
+    public Transform room8;
+    public Transform room9;
+    public Transform room10;
 
     public Player playerMovement;
 
@@ -44,6 +50,30 @@ public class CameraMovement : MonoBehaviour
         else if (playerMovement.roomCount == 4)
         {
             transform.position = Vector2.MoveTowards(transform.position, room4.position, speed * Time.deltaTime);
+        }
+        if (playerMovement.roomCount == 5)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, room5.position, speed * Time.deltaTime);
+        }
+        else if (playerMovement.roomCount == 6)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, room6.position, speed * Time.deltaTime);
+        }
+        else if (playerMovement.roomCount == 7)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, room7.position, speed * Time.deltaTime);
+        }
+        else if (playerMovement.roomCount == 8)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, room8.position, speed * Time.deltaTime);
+        }
+        else if (playerMovement.roomCount == 9)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, room9.position, speed * Time.deltaTime);
+        }
+        else if (playerMovement.roomCount == 10)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, room10.position, speed * Time.deltaTime);
         }
     }
 }

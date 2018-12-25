@@ -19,7 +19,6 @@ public class EnemyScript : MonoBehaviour
 	private float stunTime;
 	public float startStunTime;
 
-    public float alphaLevel;
     public RoomScript rS;
     public bool Enabled;
 
@@ -73,7 +72,6 @@ public class EnemyScript : MonoBehaviour
 		{
 			speed = firstSpeed;
 			sprite.color = Color.white;
-			
 		}
 		else
 		{
@@ -85,18 +83,9 @@ public class EnemyScript : MonoBehaviour
 
 	public void TakeDamage(int damage)
     {
-
 		stunTime = startStunTime;
-		
-
         //camAnim.SetTrigger("shake");
         Instantiate(explosion, transform.position, Quaternion.identity);
         enemyHealth.MyCurrentValue -= damage;
-
-
-
-
     }
-
-
 }

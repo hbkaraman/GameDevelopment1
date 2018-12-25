@@ -178,6 +178,42 @@ public class Player : Character
             // CamMove.Shake(0.1f, 0.1f);
             //CamMove.CameraShift();
         }
+        if (other.gameObject.tag == "room5")
+        {
+            roomCount = 5;
+            //CamMove.Shake(0.1f,0.1f);
+            //CamMove.CameraShift();
+        }
+        if (other.gameObject.tag == "room6")
+        {
+            roomCount = 6;
+            //CamMove.Shake(0.1f, 0.1f);
+            //CamMove.CameraShift();
+        }
+        if (other.gameObject.tag == "room7")
+        {
+            roomCount = 7;
+            //CamMove.Shake(0.1f, 0.1f);
+            //CamMove.CameraShift();
+        }
+        if (other.gameObject.tag == "room8")
+        {
+            roomCount = 8;
+            // CamMove.Shake(0.1f, 0.1f);
+            //CamMove.CameraShift();
+        }
+        if (other.gameObject.tag == "room9")
+        {
+            roomCount = 9;
+            //CamMove.Shake(0.1f, 0.1f);
+            //CamMove.CameraShift();
+        }
+        if (other.gameObject.tag == "room10")
+        {
+            roomCount = 10;
+            // CamMove.Shake(0.1f, 0.1f);
+            //CamMove.CameraShift();
+        }
 
         if (other.gameObject.tag == "bullet")
         {
