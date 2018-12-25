@@ -10,24 +10,35 @@ public class StandingEnemy : MonoBehaviour {
 	public GameObject Bullet;
 	public Transform ShottingPoint;
 
+	private bool isShot;
+	private Animator anim;
+
 	void Start()
 	{
-		
+		anim = GetComponent<Animator>();
 	}
 
 	void Update()
 	{
-		
+		if (isShot == true)
+		{
+			anim.SetBool("isShoot", true);
+		}
+		else
+		{
+			anim.SetBool("isShoot", false);
+		}
+
 		if (timeBtwShoots <= 0)
 		{
 			Instantiate(Bullet, ShottingPoint.position, Quaternion.identity);
+			isShot = true;
 			timeBtwShoots = startTimeBtwShoots;
 		}
 		else
 		{
 			timeBtwShoots -= Time.deltaTime;
+			isShot = false;
 		}
-
 	}
-
 }

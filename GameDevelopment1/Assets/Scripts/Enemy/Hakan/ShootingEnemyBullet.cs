@@ -26,7 +26,7 @@ public class ShootingEnemyBullet : MonoBehaviour {
 		if(transform.position.x == target.x && transform.position.y == target.y)
 		{
 			DestroyBullet();
-			Instantiate(DestroyEffect, transform.position, Quaternion.identity);
+			
 		}
 	}
 
@@ -37,10 +37,16 @@ public class ShootingEnemyBullet : MonoBehaviour {
 			DestroyBullet();
 		}
 
+		if (collision.CompareTag("Kalkan"))
+		{
+			DestroyBullet();
+		}
+
 	}
 
 	void DestroyBullet()
 	{
+		Instantiate(DestroyEffect, transform.position, Quaternion.identity);
 		Destroy(gameObject);
 	}
 }

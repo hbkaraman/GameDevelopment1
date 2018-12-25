@@ -1,0 +1,2094 @@
+fileFormatVersion: 2
+guid: cfe68121accc1a14793e7dbb62f0e7e6
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ShotingRobot_0
+    21300002: ShotingRobot_1
+    21300004: ShotingRobot_2
+    21300006: ShotingRobot_3
+    21300008: ShotingRobot_4
+    21300010: ShotingRobot_5
+    21300012: ShotingRobot_6
+    21300014: ShotingRobot_7
+    21300016: ShotingRobot_8
+    21300018: ShotingRobot_9
+    21300020: ShotingRobot_10
+    21300022: ShotingRobot_11
+    21300024: ShotingRobot_12
+    21300026: ShotingRobot_13
+    21300028: ShotingRobot_14
+    21300030: ShotingRobot_15
+    21300032: ShotingRobot_16
+    21300034: ShotingRobot_17
+    21300036: ShotingRobot_18
+    21300038: ShotingRobot_19
+    21300040: ShotingRobot_20
+    21300042: ShotingRobot_21
+    21300044: ShotingRobot_22
+    21300046: ShotingRobot_23
+    21300048: ShotingRobot_24
+    21300050: ShotingRobot_25
+    21300052: ShotingRobot_26
+    21300054: ShotingRobot_27
+    21300056: ShotingRobot_28
+    21300058: ShotingRobot_29
+    21300060: ShotingRobot_30
+    21300062: ShotingRobot_31
+    21300064: ShotingRobot_32
+    21300066: ShotingRobot_33
+    21300068: ShotingRobot_34
+    21300070: ShotingRobot_35
+    21300072: ShotingRobot_36
+    21300074: ShotingRobot_37
+    21300076: ShotingRobot_38
+    21300078: ShotingRobot_39
+    21300080: ShotingRobot_40
+    21300082: ShotingRobot_41
+    21300084: ShotingRobot_42
+    21300086: ShotingRobot_43
+    21300088: ShotingRobot_44
+    21300090: ShotingRobot_45
+    21300092: ShotingRobot_46
+    21300094: ShotingRobot_47
+    21300096: ShotingRobot_48
+    21300098: ShotingRobot_49
+    21300100: ShotingRobot_50
+    21300102: ShotingRobot_51
+    21300104: ShotingRobot_52
+    21300106: ShotingRobot_53
+    21300108: ShotingRobot_54
+    21300110: ShotingRobot_55
+    21300112: ShotingRobot_56
+    21300114: ShotingRobot_57
+    21300116: ShotingRobot_58
+    21300118: ShotingRobot_59
+    21300120: ShotingRobot_60
+    21300122: ShotingRobot_61
+    21300124: ShotingRobot_62
+    21300126: ShotingRobot_63
+    21300128: ShotingRobot_64
+    21300130: ShotingRobot_65
+    21300132: ShotingRobot_66
+    21300134: ShotingRobot_67
+    21300136: ShotingRobot_68
+    21300138: ShotingRobot_69
+    21300140: ShotingRobot_70
+    21300142: ShotingRobot_71
+    21300144: ShotingRobot_72
+    21300146: ShotingRobot_73
+    21300148: ShotingRobot_74
+    21300150: ShotingRobot_75
+    21300152: ShotingRobot_76
+    21300154: ShotingRobot_77
+    21300156: ShotingRobot_78
+    21300158: ShotingRobot_79
+    21300160: ShotingRobot_80
+    21300162: ShotingRobot_81
+    21300164: ShotingRobot_82
+    21300166: ShotingRobot_83
+    21300168: ShotingRobot_84
+    21300170: ShotingRobot_85
+    21300172: ShotingRobot_86
+    21300174: ShotingRobot_87
+    21300176: ShotingRobot_88
+    21300178: ShotingRobot_89
+    21300180: ShotingRobot_90
+    21300182: ShotingRobot_91
+    21300184: ShotingRobot_92
+    21300186: ShotingRobot_93
+    21300188: ShotingRobot_94
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShotingRobot_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1907
+        width: 90
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a0486a6a3caa541aff2a38c5a41ecb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_1
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1907
+        width: 94
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117f22cec1badcf4281f73994fccd1b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_2
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1906
+        width: 100
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe3a8f0976b4514fa3d8a91fab31de4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_3
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1904
+        width: 103
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51fd70635f92ad24c8c0a3409b1f3347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_4
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1906
+        width: 109
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606886e0260be1c449048be6cce807a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_5
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1906
+        width: 112
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa350761f090094c994235ee35a7d9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_6
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1906
+        width: 115
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6af6f19fb5c00e4e974b174271aa4b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_7
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1907
+        width: 110
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6e02629145c9247b6a5f2b123e7d19
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_8
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1906
+        width: 107
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a506852d4e91174aa3a55b7b61631ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_9
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1943
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b61222ac4bf8d84eab83049f4dac174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_10
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 1904
+        width: 102
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faca7d74bbcf36244bca652143cb7792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_11
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 1907
+        width: 99
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f176cc1ea8bf41445ae6aa797891ebfe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_12
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 1907
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd0ad45d61f5694880ee042bc6c8160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_13
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1666
+        width: 105
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ce98dbe3ed2d94c9c7e28757034cd2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_14
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1671
+        width: 109
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d942d3426f81214b806c2d2e6cf7ead
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_15
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1670
+        width: 109
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a4dfe48019d9542a92008dd4f73fd8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_16
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1672
+        width: 107
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7de041bffbcf9f4e93f7863e85c6dd9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_17
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1669
+        width: 104
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3399ec8c8c31b5c4e8ff389c66dac5c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_18
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1670
+        width: 103
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fd5ea1ba4c3fe468beb9aee21ca1c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_19
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1669
+        width: 101
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc428385cd94164d95516910f6e6bc9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_20
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 1668
+        width: 99
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08268faa7dacff74998ea96501f057b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_21
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1670
+        width: 97
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b84f344eb9694c4d8202b275b9427a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_22
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 1671
+        width: 96
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf2eca757c2ff943947e0517648ab02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_23
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 1670
+        width: 91
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4eebd6ca159874459b70d9be595a286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_24
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1431
+        width: 99
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561dec560589ac44db96b3a918d9c770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_25
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1428
+        width: 101
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016b2d7f4af00ac488b18d3554f1d710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_26
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1430
+        width: 107
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928bdbec7efc8c242a16dc210963403a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_27
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1431
+        width: 110
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9a7ca41f08f244ca9f3c2aab92ac18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_28
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 1430
+        width: 115
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54cd7a40957ab6740ba59865492c3fcd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_29
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 1430
+        width: 111
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428442b65a5375f4b9c6cea4022fafde
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_30
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 1430
+        width: 110
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e8ab35b74af844bb8bb970a441bef4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_31
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1428
+        width: 104
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf8971832902514a9280ce08a0c984d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_32
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1430
+        width: 101
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624b982bd1e510746ba47c6c27fa1787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_33
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 1431
+        width: 94
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abae9f43242340438817f5691b198c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_34
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 1431
+        width: 90
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32d33d9bfa80f443940abb4c4d61063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_35
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1194
+        width: 93
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb4691a84900c943a84cfdeba80020d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_36
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1196
+        width: 95
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85491a032aeb45741907719afe972a80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_37
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1194
+        width: 97
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ad5b86b4d3c864e90b4111eefef741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_38
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1191
+        width: 99
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4892591ef11ea4190b22522c8e6eb5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_39
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1193
+        width: 102
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b686c60cc5bd04d8a77bf8a4eeef22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_40
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1194
+        width: 103
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da18fb1a25aaba41ac766381b0f9021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_41
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 1192
+        width: 106
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f18190b4abeea847b6c83eb0984d04c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_42
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 1195
+        width: 107
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a6c481639af3745aeb5158b0518249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_43
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 1192
+        width: 109
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df53bb0708f59b04c99dd30315c35e4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_44
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 1195
+        width: 109
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1085e5346cebc414390098a0857753b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_45
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 1190
+        width: 104
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9073b43a7eb1746a72239487c63544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_46
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 867
+        width: 90
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32aa90daad7e2ef4098501cfaca4139a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_47
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 870
+        width: 97
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26f95b6dc751b94bad6b6f2d5f6b06a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_48
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 870
+        width: 106
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9b335fbbdc85f49834e7ab7931e868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_49
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 870
+        width: 117
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9475c5acbb149a4eb37ee05fd7155a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_50
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 869
+        width: 124
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d25d2296c3fc54990b32ee0e5462c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_51
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 871
+        width: 131
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac01d4bac0b411c43b912e4ea302ab8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_52
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 870
+        width: 137
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9673ab125ebe847b17b8f53e651466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_53
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 870
+        width: 142
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a88bcbd98b2f04a8c592aa7147d0a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_54
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 907
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859ae6149d49f254ba32f7c8b283a4f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_55
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 870
+        width: 142
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c7e6ac2f482c54b94e166bb12810e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_56
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 870
+        width: 136
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8d90f1dc0e1fd42907bddec996a5ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_57
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 870
+        width: 130
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ec7bc0f5d697f46a8e271b0023f0dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_58
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 871
+        width: 138
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57652eebe5d9f0a46994cb1eca2a5f6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_59
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 622
+        width: 146
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15ef533a6b595f4c9fa2bb5776e9bc6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_60
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 623
+        width: 135
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56068d5cfa6a1d4e94a3c433b8d49be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_61
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 623
+        width: 122
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a038d0558bcc5248b40b480a81225ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_62
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 625
+        width: 107
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9e6759acbe8d543840289a00873f19
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_63
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 626
+        width: 91
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7dbd8a5fad5e62449d37005af7ad94c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_64
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 623
+        width: 90
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf1d7fde5d35144faf21aa08c8295bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_65
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 625
+        width: 90
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acdd46f7db851042b023d42e735d825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_66
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 623
+        width: 90
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31351d4e0717b94ab20869081ead14d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_67
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 623
+        width: 89
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1419bfe03f8c245901f50e8ca698fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_68
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 626
+        width: 89
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6de0d9f5eb6464bae0a86c43d1b7d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_69
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 625
+        width: 90
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d36b4e6b18365448123755ea52fa10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_70
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 626
+        width: 90
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbab8ea681fdfac41ae9f3bf42b4e475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_71
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 303
+        width: 141
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7daf77d62da0b34a8d3fb2b697171e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_72
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 302
+        width: 130
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25fc2bdaefbb06478a8a839def7d146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_73
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 302
+        width: 136
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6815597e54f68d445ae3e0d27f4f4116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_74
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 302
+        width: 140
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e11fb50f1d914749842d2197a9d2759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_75
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 302
+        width: 143
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5b45e062b26784eaf86c4f64b93ef2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_76
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 302
+        width: 138
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c036764f853942945b57fc76a6d8fc88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_77
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 303
+        width: 131
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c561a32971cfbc478ca965317d4dc18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_78
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 301
+        width: 122
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0610bb9cf804494448b1166148fd7619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_79
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 302
+        width: 116
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617e30fe9353aff4e99f29250c407d50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_80
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 302
+        width: 106
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef57fab3bb20dac499c13d3881687c00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_81
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 302
+        width: 98
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8d8b7dc6988d34283920ed6afb656f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_82
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 299
+        width: 91
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d15efecade2cc240b18a5d96658bf73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_83
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 58
+        width: 89
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d9e1c74ded5824cb2109e3e699642b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_84
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 57
+        width: 90
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d06d083e3f55e444a9da2a3ee0baced
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_85
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 57
+        width: 89
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f4c95830471424585284251abfefdc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_86
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 57
+        width: 90
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eeb959638c5bdb4c9ba6ecd4ff3860c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_87
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 57
+        width: 90
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d3f19c03f4fc148b243ceed60f3dbe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_88
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 57
+        width: 90
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1522a2c0979f1804c852aed19de70c47
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_89
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 55
+        width: 90
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409041b87fb225240a05d55511208570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_90
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 57
+        width: 91
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f207ad64abbd646a022204257ac830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_91
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 57
+        width: 110
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7ea5d6b0fb4e44faa1fcdf1180c96d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_92
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 55
+        width: 122
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8689e9059a18ede4c855b3d43cc9c238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_93
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 56
+        width: 133
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5d2842b262bae4294ea92ebe174f9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShotingRobot_94
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 54
+        width: 146
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7e6f3d9fff6a2469fb6406bdc1888d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 69ea5d99c44c0d0478a598f296eafe41
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

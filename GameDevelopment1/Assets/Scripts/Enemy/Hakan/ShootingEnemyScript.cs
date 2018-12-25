@@ -20,11 +20,16 @@ public class ShootingEnemyScript : MonoBehaviour {
 
 	private EnemyScript Enemy;
 
+	private Animator anim;
+	
+
+	private bool isShoting;
 
 	void Start ()
 	{
 		player = GameObject.FindGameObjectWithTag("Player").transform;
 		Enemy = GetComponent<EnemyScript>();
+		anim = GetComponent<Animator>();
 
 		timeBtwShoots = startTimeBtwShoots;
 
@@ -36,8 +41,14 @@ public class ShootingEnemyScript : MonoBehaviour {
 		Movement();
 	}
 
+
 	private void Movement()
 	{
+
+
+		
+
+
 		if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
 		{
 			transform.position = Vector2.MoveTowards(transform.position, player.position, Enemy.speed * Time.deltaTime);
@@ -55,23 +66,48 @@ public class ShootingEnemyScript : MonoBehaviour {
 
 	void Update ()
 	{
-		Randomize = Random.Range(0, 2);
+		if (isShoting == true)
+		{
+			anim.SetInteger("State", 1);
+		}
+		else
+		{
+			anim.SetInteger("State", 0);
+		}
+
+
+		Attack();
+	}
+
+	private void Attack()
+	{
+		
 
 		if (timeBtwShoots <= 0)
 		{
-			if(Randomize == 0)
+			
+
+			if (Randomize == 0)
 			{
-				Instantiate(enemyBullet, shootingPosition.position, Quaternion.identity);
-			} else if (Randomize == 1)
+
+				Instantiate(enemyBullet, transform.position, Quaternion.identity);
+				isShoting = true;
+			}
+			else if (Randomize == 1)
 			{
 				Instantiate(enemyBullet, shootingPosition2.position, Quaternion.identity);
+				isShoting = true;
 			}
+
 			timeBtwShoots = startTimeBtwShoots;
+
 		}
 		else
 		{
 			timeBtwShoots -= Time.deltaTime;
+			isShoting = false;
 		}
-
+		
 	}
+
 }

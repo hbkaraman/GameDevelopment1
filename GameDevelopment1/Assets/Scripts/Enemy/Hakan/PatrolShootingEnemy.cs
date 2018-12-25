@@ -116,6 +116,5 @@ public class PatrolShootingEnemy : MonoBehaviour {
 			timeBtwShoots -= Time.deltaTime;
 			isShoot = false;
 		}
-
 	}
 }

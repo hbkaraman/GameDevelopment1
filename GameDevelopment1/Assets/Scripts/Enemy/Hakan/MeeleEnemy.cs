@@ -46,7 +46,6 @@ public class MeeleEnemy : MonoBehaviour {
 
 	void Update()
 	{
-
 		FollowTarget();
 	}
 

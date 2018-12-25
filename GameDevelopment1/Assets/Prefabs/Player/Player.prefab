@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50519821456607736}
   m_Layer: 8
   m_Name: Kalkan
-  m_TagString: wall
+  m_TagString: Kalkan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,8 +85,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1508982086772600}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.59, y: 0, z: 44.4}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalPosition: {x: -5.51, y: -0.73, z: 44.4}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 4076002776118702}
   - {fileID: 4587153892175404}
@@ -100,8 +100,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1411226132363490}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.008333523, y: -0.091666654, z: 0}
-  m_LocalScale: {x: 0.15107915, y: 0.15107915, z: 0.15107915}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 4380405167083094}
   m_RootOrder: 1
@@ -133,11 +133,11 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1411226132363490}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -145,7 +145,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!58 &58764955191376510
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -160,7 +160,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.21, y: 0.36}
   serializedVersion: 2
-  m_Radius: 6.75
+  m_Radius: 7.53
 --- !u!61 &61256281083378896
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -173,18 +173,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.01989758, y: -0.049743652}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.85333335, y: 1.6}
-    newSize: {x: 0.85333335, y: 1.6}
+    oldSize: {x: 1.59, y: 2.85}
+    newSize: {x: 1.59, y: 2.85}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.85333335, y: 1.6}
+  m_Size: {x: 1.4502573, y: 2.773954}
   m_EdgeRadius: 0
 --- !u!95 &95303335745052126
 Animator:
@@ -244,8 +244,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767a2b90dd535dd49b77c09d0abccc08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeBtwShots: 0.4
-  shotPoint: {fileID: 0}
+  startTimeBtwShots: 0.5
+  shotPoint: {fileID: 4076002776118702}
   bullet: {fileID: 1327893952493908, guid: 42a6d3be862fd0b4089407b49c75fb4e, type: 2}
   player: {fileID: 114331123193911628}
 --- !u!212 &212113815176607594
@@ -329,12 +329,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: a9b818e20e7713c4d991c333f2f91be4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 421ed7f95f0121744b8874d54fdaea5c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.85333335, y: 1.6}
+  m_Size: {x: 1.59, y: 2.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

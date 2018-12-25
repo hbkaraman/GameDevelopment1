@@ -5,10 +5,8 @@ using UnityEngine;
 public class StandingEnemyBullet : MonoBehaviour {
 
 	public float speed;
-	public float distance;
 	public float lifeTime;
 	public int damage;
-	public LayerMask whatIsSolid;
 
 	public GameObject destroyEffect;
 	private Rigidbody2D rb;
@@ -20,23 +18,24 @@ public class StandingEnemyBullet : MonoBehaviour {
 		Invoke("DestroyProjectile",lifeTime);
 
 		rb = GetComponent<Rigidbody2D>();
-		rb.velocity = transform.up * speed;
+
+		rb.velocity = Vector2.left * speed;
 	}
 	
-	// Update is called once per frame
-	void Update ()
+	
+	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.forward, distance, whatIsSolid);
-		if (hitInfo.collider != null)
+		if(collision.tag == "Player")
 		{
-			if (hitInfo.collider.CompareTag("Player"))
-			{
-				hitInfo.collider.GetComponent<Player>().TakeDamage(damage);
-			}
+			collision.GetComponent<Player>().TakeDamage(damage);
+		}
 
+		if(collision.tag == "Kalkan")
+		{
 			DestroyProjectile();
 		}
 	}
+
 
 	void DestroyProjectile()
 	{
