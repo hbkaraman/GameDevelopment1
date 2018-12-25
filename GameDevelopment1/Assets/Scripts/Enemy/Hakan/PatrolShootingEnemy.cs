@@ -56,12 +56,10 @@ public class PatrolShootingEnemy : MonoBehaviour {
 		Anim = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
 		
-
 		waitTime = startWaitTime;
 
-		moveSpot.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+		moveSpot.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY),44.4f);
 	}
-	
 	
 	void Update ()
 	{
@@ -79,22 +77,19 @@ public class PatrolShootingEnemy : MonoBehaviour {
 		{
 			Anim.SetInteger("State", 0);
 		}
-
-
 	}
 
 	void Movement()
 	{
-
         //rb.MovePosition(Vector2.MoveTowards(transform.position, moveSpot.position, Enemy.speed * Time.deltaTime));
-        transform.position=(Vector2.MoveTowards(transform.position, moveSpot.position, Enemy.speed * Time.deltaTime));
+        transform.position=(Vector3.MoveTowards(transform.position, moveSpot.position, Enemy.speed * Time.deltaTime));
 
 
         if (Vector2.Distance(transform.position, moveSpot.position) < 0.2f)
 		{
 			if (waitTime <= 0)
 			{
-				moveSpot.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+				moveSpot.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY),44.4f);
 				waitTime = startWaitTime;
 			}
 			else
@@ -103,7 +98,6 @@ public class PatrolShootingEnemy : MonoBehaviour {
 			}
 		}
 	}
-
 
 	void Shoot()
 	{
