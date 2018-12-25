@@ -28,6 +28,7 @@ public class StandingEnemyBullet : MonoBehaviour {
 		if(collision.tag == "Player")
 		{
 			collision.GetComponent<Player>().TakeDamage(damage);
+			DestroyProjectile();
 		}
 
 		if(collision.tag == "Kalkan")
