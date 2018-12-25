@@ -120,7 +120,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1588895747272436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 44.4}
+  m_LocalPosition: {x: 37.26, y: -0.15, z: 44.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224545059539832554}
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bac0a2439e03a8c4cb7c5c810291b518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeBtwShoots: 2
+  startTimeBtwShoots: 5
   Bullet: {fileID: 1034350771839380, guid: 6c7f3f9ef3f4f544ca8361f262847b55, type: 2}
   ShottingPoint: {fileID: 4558643016583660}
 --- !u!114 &114445180342834102

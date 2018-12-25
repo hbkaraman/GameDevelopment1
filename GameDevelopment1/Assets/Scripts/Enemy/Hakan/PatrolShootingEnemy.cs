@@ -34,6 +34,19 @@ public class PatrolShootingEnemy : MonoBehaviour {
 
 	private Rigidbody2D rb;
 
+	private Transform target;
+	public Transform Target
+	{
+		get
+		{
+			return target;
+		}
+
+		set
+		{
+			target = value;
+		}
+	}
 
 
 
@@ -42,6 +55,7 @@ public class PatrolShootingEnemy : MonoBehaviour {
 		Enemy = GetComponent<EnemyScript>();
 		Anim = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
+		
 
 		waitTime = startWaitTime;
 
@@ -93,28 +107,30 @@ public class PatrolShootingEnemy : MonoBehaviour {
 
 	void Shoot()
 	{
-
-		Randomize = Random.Range(0, 2);
-
-		if (timeBtwShoots <= 0)
+		if (target != null)
 		{
-			if (Randomize == 0)
-			{
-				Instantiate(enemyBullet, shootingPosition.position, Quaternion.identity);
-				isShoot = true;
+			Randomize = Random.Range(0, 2);
 
-			}
-			else if (Randomize == 1)
+			if (timeBtwShoots <= 0)
 			{
-				Instantiate(enemyBullet, shootingPosition2.position, Quaternion.identity);
-				isShoot = true;
+				if (Randomize == 0)
+				{
+					Instantiate(enemyBullet, shootingPosition.position, Quaternion.identity);
+					isShoot = true;
+
+				}
+				else if (Randomize == 1)
+				{
+					Instantiate(enemyBullet, shootingPosition2.position, Quaternion.identity);
+					isShoot = true;
+				}
+				timeBtwShoots = startTimeBtwShoots;
 			}
-			timeBtwShoots = startTimeBtwShoots;
-		}
-		else
-		{
-			timeBtwShoots -= Time.deltaTime;
-			isShoot = false;
+			else
+			{
+				timeBtwShoots -= Time.deltaTime;
+				isShoot = false;
+			}
 		}
 	}
 }

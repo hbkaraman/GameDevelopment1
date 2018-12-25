@@ -16,7 +16,7 @@ public class ShootingEnemyBullet : MonoBehaviour {
 	{
 		player = GameObject.FindGameObjectWithTag("Player").transform;
 
-		target = new Vector2(player.position.x, player.position.y);
+		target = new Vector3(player.position.x, player.position.y, player.position.z);
 	}
 
 	void Update()
@@ -25,8 +25,7 @@ public class ShootingEnemyBullet : MonoBehaviour {
 
 		if(transform.position.x == target.x && transform.position.y == target.y)
 		{
-			DestroyBullet();
-			
+			DestroyBullet();	
 		}
 	}
 
@@ -42,6 +41,18 @@ public class ShootingEnemyBullet : MonoBehaviour {
 			DestroyBullet();
 		}
 
+		if (collision.gameObject.tag == ("wall"))
+		{
+			DestroyBullet();
+		}
+	}
+
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+		if (collision.gameObject.tag==("wall"))
+		{
+			DestroyBullet();
+		}
 	}
 
 	void DestroyBullet()
