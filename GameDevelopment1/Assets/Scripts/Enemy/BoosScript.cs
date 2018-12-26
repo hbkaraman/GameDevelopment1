@@ -16,21 +16,84 @@ public class BoosScript : MonoBehaviour {
 
 	public Image winScene;
 
+    private float waitTime;
+    public float startWaitTime;
 
-	//public Animator camAnim;
-	public GameObject deathEffect;
+    public Transform moveSpot;
+    public float minX;
+    public float maxX;
+    public float minY;
+    public float maxY;
+
+
+    public Transform shootingPosition;
+    public Transform shootingPosition2;
+    public GameObject enemyBullet;
+
+    private float timeBtwShoots;
+    public float startTimeBtwShoots;
+
+    private int Randomize;
+
+    private Animator Anim;
+
+    private bool isShoot;
+    private bool isIdle;
+
+    private EnemyScript Enemy;
+
+    private Rigidbody2D rb;
+
+    private Transform target;
+    public Transform Target
+    {
+        get
+        {
+            return target;
+        }
+
+        set
+        {
+            target = value;
+        }
+    }
+
+    //public Animator camAnim;
+    public GameObject deathEffect;
 	public GameObject explosion;
 
 	private void Start()
-	{
-		bossHealth.Initilized(health, health);
+    {
+        Enemy = GetComponent<EnemyScript>();
+        Anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+
+        waitTime = startWaitTime;
+
+        moveSpot.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 44.4f);
+
+        bossHealth.Initilized(health, health);
 	}
 
 	private void Update()
 	{
 		healthgroup.alpha = 1;
 
-		if (bossHealth.MyCurrentValue <= 0)
+        Movement();
+
+        Shoot();
+
+
+        if (isShoot == true)
+        {
+            Anim.SetInteger("State", 1);
+        }
+        else
+        {
+            Anim.SetInteger("State", 0);
+        }
+
+        if (bossHealth.MyCurrentValue <= 0)
 		{
 			Instantiate(deathEffect, transform.position, Quaternion.identity);
 			Destroy(gameObject);
@@ -39,11 +102,60 @@ public class BoosScript : MonoBehaviour {
 		}
 	}
 
-	public void TakeDamage(int damage)
+    void Movement()
+    {
+        //rb.MovePosition(Vector2.MoveTowards(transform.position, moveSpot.position, Enemy.speed * Time.deltaTime));
+        transform.position = (Vector3.MoveTowards(transform.position, moveSpot.position, Enemy.speed * Time.deltaTime));
+
+
+        if (Vector2.Distance(transform.position, moveSpot.position) < 0.2f)
+        {
+            if (waitTime <= 0)
+            {
+                moveSpot.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 44.4f);
+                waitTime = startWaitTime;
+            }
+            else
+            {
+                waitTime -= Time.deltaTime;
+            }
+        }
+    }
+
+    public void TakeDamage(int damage)
 	{
 		//camAnim.SetTrigger("shake");
 		Instantiate(explosion, transform.position, Quaternion.identity);
 		bossHealth.MyCurrentValue -= damage;
 
 	}
+
+    void Shoot()
+    {
+        if (target != null)
+        {
+            Randomize = Random.Range(0, 2);
+
+            if (timeBtwShoots <= 0)
+            {
+                if (Randomize == 0)
+                {
+                    Instantiate(enemyBullet, shootingPosition.position, Quaternion.identity);
+                    isShoot = true;
+
+                }
+                else if (Randomize == 1)
+                {
+                    Instantiate(enemyBullet, shootingPosition2.position, Quaternion.identity);
+                    isShoot = true;
+                }
+                timeBtwShoots = startTimeBtwShoots;
+            }
+            else
+            {
+                timeBtwShoots -= Time.deltaTime;
+                isShoot = false;
+            }
+        }
+    }
 }
