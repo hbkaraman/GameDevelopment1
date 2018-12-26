@@ -21,13 +21,18 @@ public class Player : Character
     private float specialTime = 3f;
     private bool isSpecialActive;
 
+	public Animator FrameAnim;
+	public GameObject HealthEffect;
+	public GameObject ManaEffect;
 
-    // Use this for initialization
-    protected override void Start()
+
+	// Use this for initialization
+	protected override void Start()
     {
+
         base.Start();
-        redPotCount = 5;
-        bluePotCount = 5;
+        redPotCount = 1;
+        bluePotCount = 1;
     }
 
     // Update is called once per frame
@@ -68,7 +73,22 @@ public class Player : Character
         }
 
 
-        GetInput();
+		if (health.MyCurrentValue > 50)
+		{
+			FrameAnim.SetInteger("State", 2);
+
+		}else if(health.MyCurrentValue < 50 && health.MyCurrentValue > 30)
+		{
+			FrameAnim.SetInteger("State", 0);
+
+		}else if (health.MyCurrentValue < 30)
+		{
+			FrameAnim.SetInteger("State", 1);
+		}
+
+
+
+		GetInput();
 
         base.Update();
 
@@ -103,6 +123,7 @@ public class Player : Character
 			{
 				mana.MyCurrentValue += 10;
 				bluePotCount -= 1;
+				Instantiate(ManaEffect, transform.position, Quaternion.identity);
 			}
 	}
 
@@ -131,8 +152,9 @@ public class Player : Character
         {
             health.MyCurrentValue += 10;
             redPotCount -= 1;
+			Instantiate(HealthEffect, transform.position, Quaternion.identity);			
 
-        }
+		}
     }
 
 

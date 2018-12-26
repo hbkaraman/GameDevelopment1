@@ -10,7 +10,10 @@ public class VideoController : MonoBehaviour {
 	public string Level;
 	private float videoTime;
 	private float waitTime;
-	private float waittimeequ = 3;
+	public float waittimeequ;
+	public Animator anim;
+	public float waitvideo;
+	//public GameObject image;
 
 	// Use this for initialization
 	void Awake()
@@ -23,12 +26,14 @@ public class VideoController : MonoBehaviour {
 	{
 		videoTime += Time.deltaTime;
 
-		if (videoTime >= video.clip.length)
+		if (videoTime >= video.clip.length - waitvideo)
 		{
 			waitTime += Time.deltaTime;
+			//image.SetActive(true);
+			anim.SetTrigger("end");
 
-			if(waitTime >= waittimeequ)
-			{
+			if (waitTime >= waittimeequ)
+			{				
 				SceneManager.LoadScene(Level);
 			}
 		}

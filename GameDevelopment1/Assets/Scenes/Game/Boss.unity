@@ -723,7 +723,7 @@ MonoBehaviour:
   bossHealth: {fileID: 42752511}
   health: 200
   winScene: {fileID: 1143021549}
-  startWaitTime: 0.3
+  startWaitTime: 4
   moveSpot: {fileID: 499707369}
   minX: -11
   maxX: 10.5

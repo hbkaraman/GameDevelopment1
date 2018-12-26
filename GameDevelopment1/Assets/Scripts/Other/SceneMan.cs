@@ -7,6 +7,7 @@ public class SceneMan : MonoBehaviour {
 
 	public Animator anim;
 	public string sceneName;
+	private bool isKeyPress = false;
 
 	// Use this for initialization
 	void Start () {
@@ -14,19 +15,26 @@ public class SceneMan : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+	{
+		if (Input.anyKey && isKeyPress == false)
+		{
+			isKeyPress = true;
+			StartCoroutine(LoadScene());
+		}
 	}
 
 	IEnumerator LoadScene()
 	{
-		//anim.SetTrigger("end");
-		yield return new WaitForSeconds(2f);
+		anim.SetTrigger("end");
+		yield return new WaitForSeconds(2);
 		SceneManager.LoadScene(sceneName);
+
+	
 	}
 
 
-	public void StartGame()
+	/*public void StartGame()
 	{
 		SceneManager.LoadScene(sceneName);
 		//StartCoroutine(LoadScene());
@@ -34,5 +42,5 @@ public class SceneMan : MonoBehaviour {
 	public void Quit()
 	{
 		Application.Quit();
-	}
+	}*/
 }

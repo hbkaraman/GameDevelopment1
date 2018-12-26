@@ -9,7 +9,7 @@ public class Stat : MonoBehaviour
     public float MyMaxValue { get; set; }
 
     [SerializeField]
-    private TextMeshProUGUI statValue;
+    private Text statValue;
 
     [SerializeField]
     private float lerpSpeed;

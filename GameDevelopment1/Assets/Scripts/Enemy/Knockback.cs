@@ -25,7 +25,6 @@ public class Knockback : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Kalkan")
         {
-            Debug.Log("Thrust: " + thrust+ "  " + "Knock:  " + KnockTime);
             mE.enabled = false;
             Rigidbody2D kalkan = collision.gameObject.GetComponent<Rigidbody2D>();
             Vector2 difference = transform.position - kalkan.transform.position;

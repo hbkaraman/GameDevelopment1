@@ -118,7 +118,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1986833084307980
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +154,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1958353769748172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.306156, y: 2.509891, z: 44.4}
+  m_LocalPosition: {x: 29.21828, y: -0.4461707, z: 44.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224552060147174178}
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93599d9ce7ff4ef49b7c7c7c35e96292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StopDistan: 1
+  StopDistan: 1.2
   startTimeBtwAttack: 1
   attackRange: 1.61
   Player:
@@ -400,7 +400,6 @@ MonoBehaviour:
   firstSpeed: 6
   speed: 6
   startStunTime: 0.7
-  alphaLevel: 0
   rS: {fileID: 0}
   Enabled: 0
   deathEffect: {fileID: 1110264763428426, guid: 5487e197c27fe54408d2e6455649c432,
