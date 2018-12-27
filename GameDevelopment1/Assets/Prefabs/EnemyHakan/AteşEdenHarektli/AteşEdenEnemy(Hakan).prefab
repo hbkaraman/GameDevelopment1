@@ -349,7 +349,7 @@ MonoBehaviour:
   shootingPosition2: {fileID: 4721818961273234}
   enemyBullet: {fileID: 1327893952493908, guid: 2789619cd20c9ba4f956aa2a00ff1d04,
     type: 2}
-  startTimeBtwShoots: 3
+  startTimeBtwShoots: 1
 --- !u!114 &114762469857443044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -478,7 +478,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 7547546e4958d204d93228919619f1ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

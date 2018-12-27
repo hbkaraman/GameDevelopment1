@@ -17,8 +17,8 @@ public class Knockback : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        thrust = Random.Range(50, 120);
-        KnockTime = Random.Range(0.5f, 2);
+        thrust = Random.Range(80, 160);
+        KnockTime = Random.Range(4, 5);
 	}
 
     private void OnCollisionEnter2D(Collision2D collision)

@@ -51,7 +51,7 @@ public class CameraMovement : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, room4.position, speed * Time.deltaTime);
         }
-        if (playerMovement.roomCount == 5)
+        else if (playerMovement.roomCount == 5)
         {
             transform.position = Vector2.MoveTowards(transform.position, room5.position, speed * Time.deltaTime);
         }

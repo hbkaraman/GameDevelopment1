@@ -19,6 +19,8 @@ public class RoomScript : MonoBehaviour
     public EnemyScript[] OnDestroyDispatchers;
 
     public UnityEngine.Events.UnityEvent OnAllObjectsDestroyed;
+	private float timer;
+	private float wait = 5;
 
     void Update()
     {
@@ -34,7 +36,13 @@ public class RoomScript : MonoBehaviour
 
             for (int a = 0; a < OnDestroyDispatchers.Length; a++)
             {
-                OnDestroyDispatchers[a].gameObject.SetActive(true);
+				timer += Time.deltaTime;
+				
+				if(timer > wait)
+				{
+					OnDestroyDispatchers[a].gameObject.SetActive(true);
+				}
+               
             }
         }
 

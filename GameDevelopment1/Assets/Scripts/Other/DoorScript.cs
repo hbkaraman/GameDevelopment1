@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour {
 
-	public Player player;
-
 	public Animator anim;
     public bool doorCanOpen;
     public Collider2D myCol;
