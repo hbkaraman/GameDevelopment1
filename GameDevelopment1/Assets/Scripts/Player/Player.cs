@@ -73,15 +73,15 @@ public class Player : Character
         }
 
 
-		if (health.MyCurrentValue > 50)
+		if (health.MyCurrentValue > 70)
 		{
 			FrameAnim.SetInteger("State", 2);
 
-		}else if(health.MyCurrentValue < 50 && health.MyCurrentValue > 30)
+		}else if(health.MyCurrentValue < 70 && health.MyCurrentValue > 35)
 		{
 			FrameAnim.SetInteger("State", 0);
 
-		}else if (health.MyCurrentValue < 30)
+		}else if (health.MyCurrentValue < 35)
 		{
 			FrameAnim.SetInteger("State", 1);
 		}

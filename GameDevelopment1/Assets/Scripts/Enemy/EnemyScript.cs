@@ -60,7 +60,7 @@ public class EnemyScript : MonoBehaviour
 		{
 			Instantiate(bluePot, transform.position, Quaternion.identity);
 		}
-		if (lootChance == 7 || lootChance == 8)
+		if (lootChance == 8 || lootChance == 9)
 		{
 			Instantiate(redPot, transform.position, Quaternion.identity);
 		}
