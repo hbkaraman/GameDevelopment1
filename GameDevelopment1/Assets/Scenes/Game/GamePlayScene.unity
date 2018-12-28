@@ -647,7 +647,7 @@ MonoBehaviour:
   pScript: {fileID: 141799116}
   roomEntered: 0
   roomInside: 0
-  roomFinished: 0
+  roomFinished: 1
   destroyCount: 0
   doors:
   - {fileID: 1289172039}

@@ -14,22 +14,20 @@ public class Player : Character
     public int bluePotCount;
     public bool redPotUsed;
 
-	public bool isManaFinish;
-	public bool isManaFull;
+    public bool isManaFinish;
+    public bool isManaFull;
 
     private float timer;
     private float specialTime = 3f;
     private bool isSpecialActive;
 
-	public Animator FrameAnim;
-	public GameObject HealthEffect;
-	public GameObject ManaEffect;
+    public Animator FrameAnim;
+    public GameObject HealthEffect;
+    public GameObject ManaEffect;
 
-
-	// Use this for initialization
-	protected override void Start()
+    // Use this for initialization
+    protected override void Start()
     {
-
         base.Start();
         redPotCount = 1;
         bluePotCount = 1;
@@ -38,33 +36,31 @@ public class Player : Character
     // Update is called once per frame
     protected override void Update()
     {
-		ManaBarStats();
+        ManaBarStats();
 
-		timer += Time.deltaTime;
+        timer += Time.deltaTime;
+        if (isManaFinish == false)
+        {
+            if (Input.GetKeyDown(KeyCode.Space) && isSpecialActive == false)
+            {
+                timer = 0;
+                isSpecialActive = true;
+            }
+            if (isSpecialActive == true)
+            {
+                myRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+                shield.SetActive(true);
 
-		if (isManaFinish == false)
-		{
-			if (Input.GetKeyDown(KeyCode.Space)&& isSpecialActive==false)
-			{
-				timer = 0;
-				isSpecialActive = true;
-			}
-			if (isSpecialActive == true)
-			{
-				myRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
-				shield.SetActive(true);
-
-				if (timer >= specialTime)
-				{
-					timer = 0;
-					mana.MyCurrentValue -= 10;
-					isSpecialActive = false;
-					shield.SetActive(false);
-					myRigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
-					}
-				}
-			
-		}	
+                if (timer >= specialTime)
+                {
+                    timer = 0;
+                    mana.MyCurrentValue -= 10;
+                    isSpecialActive = false;
+                    shield.SetActive(false);
+                    myRigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
+                }
+            }
+        }
 
         if (Input.GetKey(KeyCode.R))
         {
@@ -73,63 +69,64 @@ public class Player : Character
         }
 
 
-		if (health.MyCurrentValue > 70)
-		{
-			FrameAnim.SetInteger("State", 2);
+        if (health.MyCurrentValue > 70)
+        {
+            FrameAnim.SetInteger("State", 2);
 
-		}else if(health.MyCurrentValue < 70 && health.MyCurrentValue > 35)
-		{
-			FrameAnim.SetInteger("State", 0);
+        }
+        else if (health.MyCurrentValue < 70 && health.MyCurrentValue > 35)
+        {
+            FrameAnim.SetInteger("State", 0);
 
-		}else if (health.MyCurrentValue < 35)
-		{
-			FrameAnim.SetInteger("State", 1);
-		}
+        }
+        else if (health.MyCurrentValue < 35)
+        {
+            FrameAnim.SetInteger("State", 1);
+        }
 
 
 
-		GetInput();
+        GetInput();
 
         base.Update();
 
         CamMove.CameraShift();
 
 
-		
 
-	}
 
-	void ManaBarStats()
-	{
-			if (mana.MyCurrentValue == 50)
-			{
-				isManaFull = true;
-			}
-			else if (mana.MyCurrentValue < 50)
-			{
-				isManaFull = false;
-			}
-		
-			if (mana.MyCurrentValue == 0)
-			{
-				isManaFinish = true;
-			}
-			else if (mana.MyCurrentValue != 0)
-			{
-				isManaFinish = false;
-			}
+    }
 
-			if (Input.GetKeyDown(KeyCode.G) && mana.MyCurrentValue < 50 && bluePotCount > 0)
-			{
-				mana.MyCurrentValue += 10;
-				bluePotCount -= 1;
-				Instantiate(ManaEffect, transform.position, Quaternion.identity);
-			}
-	}
-
-	private void GetInput()
+    void ManaBarStats()
     {
+        if (mana.MyCurrentValue == 50)
+        {
+            isManaFull = true;
+        }
+        else if (mana.MyCurrentValue < 50)
+        {
+            isManaFull = false;
+        }
 
+        if (mana.MyCurrentValue == 0)
+        {
+            isManaFinish = true;
+        }
+        else if (mana.MyCurrentValue != 0)
+        {
+            isManaFinish = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.G) && mana.MyCurrentValue < 50 && bluePotCount > 0)
+        {
+            mana.MyCurrentValue += 10;
+            bluePotCount -= 1;
+            Instantiate(ManaEffect, transform.position, Quaternion.identity);
+        }
+    }
+
+    private void GetInput()
+    {
         direction = Vector2.zero;
 
         if (Input.GetKey(KeyCode.W))
@@ -148,33 +145,33 @@ public class Player : Character
         {
             direction += Vector2.right;
         }
-        if (Input.GetKeyDown(KeyCode.F)&& health.MyCurrentValue < health.MyMaxValue&& redPotCount > 0)
+        if (Input.GetKeyDown(KeyCode.F) && health.MyCurrentValue < health.MyMaxValue && redPotCount > 0)
         {
             health.MyCurrentValue += 10;
             redPotCount -= 1;
-			Instantiate(HealthEffect, transform.position, Quaternion.identity);			
+            Instantiate(HealthEffect, transform.position, Quaternion.identity);
 
-		}
+        }
     }
 
 
-	public virtual void TakeDamage(float damage)
-	{
-		health.MyCurrentValue -= damage;
-		Instantiate(destroyEffect, transform.position, Quaternion.identity);
+    public virtual void TakeDamage(float damage)
+    {
+        health.MyCurrentValue -= damage;
+        Instantiate(destroyEffect, transform.position, Quaternion.identity);
 
-		if (health.MyCurrentValue <= 0)
-		{
-			LossScene.enabled = true;
+        if (health.MyCurrentValue <= 0)
+        {
+            LossScene.enabled = true;
 
-			if (LossScene.enabled == true)
-			{
-				Time.timeScale = 0;
-			}
-		}
-	}
+            if (LossScene.enabled == true)
+            {
+                Time.timeScale = 0;
+            }
+        }
+    }
 
-	void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "room1")
         {
@@ -250,17 +247,17 @@ public class Player : Character
         if (other.gameObject.tag == "gold")
         {
             goldCount += 5;
-            Destroy(GameObject.FindWithTag("gold"));
+            Destroy(other.gameObject);
         }
         if (other.gameObject.tag == "redPot")
         {
             redPotCount += 1;
-            Destroy(GameObject.FindWithTag("redPot"));
+            Destroy(other.gameObject);
         }
         if (other.gameObject.tag == "bluePot")
         {
             bluePotCount += 1;
-            Destroy(GameObject.FindWithTag("bluePot"));
+            Destroy(other.gameObject);
         }
     }
 
@@ -286,7 +283,7 @@ public class Player : Character
         {
             if (isSpecialActive == false)
             {
-               // TakeDamage(10);
+                // TakeDamage(10);
             }
         }
 

@@ -52,15 +52,15 @@ public class EnemyScript : MonoBehaviour
 			Destroy(gameObject);
 			lootChance = Random.Range(0, 10);
 		}
-		if (lootChance == 4 || lootChance == 5)
+		if (lootChance == 2 || lootChance == 3)
 		{
 			Instantiate(gold, transform.position, Quaternion.identity);
 		}
-		if (lootChance == 6 || lootChance == 7)
+		if (lootChance == 4 || lootChance == 5||lootChance==6)
 		{
 			Instantiate(bluePot, transform.position, Quaternion.identity);
 		}
-		if (lootChance == 8 || lootChance == 9)
+		if (lootChance == 7 || lootChance == 8 || lootChance == 9)
 		{
 			Instantiate(redPot, transform.position, Quaternion.identity);
 		}

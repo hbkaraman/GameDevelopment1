@@ -26,8 +26,7 @@ public abstract class Character : MonoBehaviour {
 
 	public Image LossScene;
 
-
-	/*public bool IsMoving
+    /*public bool IsMoving
 	{
 		get
 		{
@@ -36,7 +35,7 @@ public abstract class Character : MonoBehaviour {
 	}*/
 
 
-	protected Rigidbody2D myRigidbody;
+    protected Rigidbody2D myRigidbody;
 
 
 	// Use this for initialization
