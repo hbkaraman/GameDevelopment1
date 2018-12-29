@@ -78,6 +78,7 @@ public class BoosScript : MonoBehaviour
         shooting = true;
         waitTime = startWaitTime;
         canMove = true;
+        lineShoot = false;
 
         moveSpot.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 44.4f);
 
