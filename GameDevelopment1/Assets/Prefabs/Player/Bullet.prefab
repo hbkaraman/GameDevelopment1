@@ -80,7 +80,7 @@ MonoBehaviour:
   whatIsSolid:
     serializedVersion: 2
     m_Bits: 768
-  destroyEffect: {fileID: 1657798570406232, guid: aa203cb34a3da974f845eacf29cbd926,
+  destroyEffect: {fileID: 1657798570406232, guid: c90336d0e87f50d4181ee258d6034b67,
     type: 2}
   rb: {fileID: 50231344597980312}
 --- !u!212 &212702078994492204

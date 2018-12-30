@@ -18,15 +18,16 @@ public class BoosScript : MonoBehaviour
 
     private float waitTime;
     public float startWaitTime;
+	
 
-    public Transform moveSpot;
+	public Transform moveSpot;
+	public Transform enemSpot;
     public float minX;
     public float maxX;
     public float minY;
     public float maxY;
 
     public Transform shootingPosition;
-    public Transform shootingPosition2;
     public GameObject enemyBullet;
 
     public GameObject[] lineBullet;
@@ -35,7 +36,11 @@ public class BoosScript : MonoBehaviour
     private float timeBtwShoots;
     public float startTimeBtwShoots;
 
-    private int Randomize;
+	private float timeBtwShootsLine;
+	public float startTimeBtwShootsLine;
+
+
+	private int Randomize;
 
     private Animator Anim;
 
@@ -69,6 +74,11 @@ public class BoosScript : MonoBehaviour
     //public Animator camAnim;
     public GameObject deathEffect;
     public GameObject explosion;
+
+	public GameObject ınstanEnemy;
+
+	private float Timer;
+	private float waitTimer = 4f;
 
     private void Start()
     {
@@ -112,16 +122,27 @@ public class BoosScript : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (bossHealth.MyCurrentValue <= 150 && bossHealth.MyCurrentValue >= 100)
+        if (bossHealth.MyCurrentValue <= 150 && bossHealth.MyCurrentValue >= 130)
         {
             StartCoroutine(Invisible());
+		
         }
-        if (bossHealth.MyCurrentValue <= 100)
+        if (bossHealth.MyCurrentValue <= 130)
         {
             startWaitTime = 1f;
             startTimeBtwShoots = 0.4f;
+
+
+			Timer += Time.deltaTime;
+
+			if(Timer> waitTimer)
+			{
+				Spawn();
+				Timer = -5;
+			}
+		
         }
-        if (bossHealth.MyCurrentValue <= 50)
+        if (bossHealth.MyCurrentValue <= 40)
         {
             StartCoroutine(ShootLine());
         }
@@ -129,12 +150,12 @@ public class BoosScript : MonoBehaviour
 
     IEnumerator Invisible()
     {
-        GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 150);
-        startTimeBtwShoots = 0.1f;
-        yield return new WaitForSeconds(0.5f);
-        GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 50);
-        yield return new WaitForSeconds(0.5f);
         GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+        startTimeBtwShoots = 0.1f;
+        yield return new WaitForSeconds(2f);
+     /*   GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+        yield return new WaitForSeconds(2f);
+        GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);*/
         yield return new WaitForSeconds(3f);
         startTimeBtwShoots = 0.7f;
         GetComponent<SpriteRenderer>().color = Color.white;
@@ -179,29 +200,32 @@ public class BoosScript : MonoBehaviour
 
     }
 
-    void Shoot()
+	void Spawn()
+	{
+		enemSpot.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 44.4f);
+		Instantiate(ınstanEnemy, enemSpot.position, Quaternion.identity);
+		enemSpot.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 44.4f);
+		Instantiate(ınstanEnemy, enemSpot.position, Quaternion.identity);
+		enemSpot.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 44.4f);
+		Instantiate(ınstanEnemy, enemSpot.position, Quaternion.identity);
+
+	}
+
+	void Shoot()
     {
         if (shooting)
         {
             if (target != null)
-            {
-                Randomize = Random.Range(0, 2);
-
+            {   
                 if (timeBtwShoots <= 0)
                 {
-                    if (Randomize == 0)
-                    {
-                        Instantiate(enemyBullet, shootingPosition.position, Quaternion.identity);
-                        isShoot = true;
 
-                    }
-                    else if (Randomize == 1)
-                    {
-                        Instantiate(enemyBullet, shootingPosition2.position, Quaternion.identity);
-                        isShoot = true;
-                    }
-                    timeBtwShoots = startTimeBtwShoots;
-                }
+					Instantiate(enemyBullet, shootingPosition.position, Quaternion.identity);
+					isShoot = true;
+			
+					timeBtwShoots = startTimeBtwShoots;
+
+				}
                 else
                 {
                     timeBtwShoots -= Time.deltaTime;
@@ -212,17 +236,17 @@ public class BoosScript : MonoBehaviour
 
         if (lineShoot)
         {
-            if (timeBtwShoots <= 0)
+            if (timeBtwShootsLine <= 0)
             {
                 for (int a = 0; a < 4; a++)
                 {
                     Instantiate(lineBullet[a], ShottingPoint.position, Quaternion.identity);
-                    timeBtwShoots = startTimeBtwShoots;
+                    timeBtwShootsLine = startTimeBtwShootsLine;
                 }
             }
             else
             {
-                timeBtwShoots -= Time.deltaTime;
+                timeBtwShootsLine -= Time.deltaTime;
             }
         }
     }

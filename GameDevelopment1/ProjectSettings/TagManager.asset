@@ -24,6 +24,7 @@ TagManager:
   - room8
   - room9
   - room10
+  - BossMeele
   layers:
   - Default
   - TransparentFX
