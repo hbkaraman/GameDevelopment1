@@ -566,17 +566,19 @@ MonoBehaviour:
   speed: 7
   LossScene: {fileID: 531351204}
   CamMove: {fileID: 521445}
-  roomCount: 0
-  isDoorOpen: 0
   destroyEffect: {fileID: 1110264763428426, guid: eb4d97fc7d75d174c8bb2ef1a3aa7fff,
     type: 2}
   shield: {fileID: 152634004}
+  roomCount: 0
   goldCount: 0
   redPotCount: 5
   bluePotCount: 5
+  isDoorOpen: 0
   redPotUsed: 0
   isManaFinish: 0
   isManaFull: 0
+  rS: {fileID: 1182514992}
+  roomFinishCount: 0
   FrameAnim: {fileID: 266292732}
   HealthEffect: {fileID: 2026717845}
   ManaEffect: {fileID: 1974512080}
@@ -1600,7 +1602,6 @@ Transform:
   - {fileID: 1176772792}
   - {fileID: 6618559}
   - {fileID: 2018702440}
-  - {fileID: 1766878767}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5047,16 +5048,16 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1766878766}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 24.420002}
-  m_LocalScale: {x: 1.375, y: 1.8333333, z: 1.8333333}
+  m_LocalPosition: {x: 0, y: 0, z: 93.240005}
+  m_LocalScale: {x: 2.75, y: 3.6666665, z: 3.6666665}
   m_Children:
   - {fileID: 1929868593}
-  m_Father: {fileID: 379743514}
-  m_RootOrder: 4
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 434.3145, y: 356.29202}
+  m_AnchoredPosition: {x: 877.69904, y: 713.184}
   m_SizeDelta: {x: 691, y: 389}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1766878768

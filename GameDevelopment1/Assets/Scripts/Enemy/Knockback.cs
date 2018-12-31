@@ -9,6 +9,7 @@ public class Knockback : MonoBehaviour {
     private Rigidbody2D rb;
     private MeeleEnemy mE;
     private PatrolShootingEnemy pS_E;
+
 	// Use this for initialization
 	void Start () {
         rb=GetComponent<Rigidbody2D>();

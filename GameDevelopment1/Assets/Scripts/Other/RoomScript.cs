@@ -11,14 +11,17 @@ public class RoomScript : MonoBehaviour
     public bool roomInside;
     public bool roomFinished;
     public int destroyCount;
+    public int roomFinishCount;
 
     public DoorScript[] doors;
+
     public Image minimapImage;
     public Image deactiveMinimapImage;
 
     public EnemyScript[] OnDestroyDispatchers;
 
     public UnityEngine.Events.UnityEvent OnAllObjectsDestroyed;
+
 	private float timer;
 	private float wait = 5;
 
@@ -42,7 +45,6 @@ public class RoomScript : MonoBehaviour
 				{
 					OnDestroyDispatchers[a].gameObject.SetActive(true);
 				}
-               
             }
         }
 
@@ -50,6 +52,7 @@ public class RoomScript : MonoBehaviour
         {
             for (int i = 0; i < doors.Length; i++)
                 doors[i].doorCanOpen = true;
+            roomFinishCount += 1;
         }
 
         if (roomInside == true)
@@ -61,7 +64,6 @@ public class RoomScript : MonoBehaviour
             minimapImage.gameObject.SetActive(false);
             deactiveMinimapImage.gameObject.SetActive(true);
         }
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -70,6 +72,7 @@ public class RoomScript : MonoBehaviour
         {
             roomEntered = true;
             roomInside = true;
+            roomFinishCount += 1;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

@@ -17,6 +17,8 @@ public class CameraMovement : MonoBehaviour
     public Transform room8;
     public Transform room9;
     public Transform room10;
+    public Transform bossRoom;
+
 
     public Player playerMovement;
 
@@ -74,6 +76,10 @@ public class CameraMovement : MonoBehaviour
         else if (playerMovement.roomCount == 10)
         {
             transform.position = Vector2.MoveTowards(transform.position, room10.position, speed * Time.deltaTime);
+        }
+        else if (playerMovement.roomCount == 11)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, bossRoom.position, speed * Time.deltaTime);
         }
     }
 }

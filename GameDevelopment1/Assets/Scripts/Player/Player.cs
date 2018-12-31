@@ -5,25 +5,29 @@ using UnityEngine;
 public class Player : Character
 {
     public CameraMovement CamMove;
-    public int roomCount;
-    public bool isDoorOpen;
+
     public GameObject destroyEffect;
     public GameObject shield;
+
+    public int roomCount;
     public int goldCount;
     public int redPotCount;
     public int bluePotCount;
-    public bool redPotUsed;
 
+    public bool isDoorOpen;
+    public bool redPotUsed;
     public bool isManaFinish;
     public bool isManaFull;
-
-    private float timer;
-    private float specialTime = 3f;
-    private bool isSpecialActive;
 
     public Animator FrameAnim;
     public GameObject HealthEffect;
     public GameObject ManaEffect;
+
+    private float timer;
+    private float specialTime = 3f;
+
+    private bool isSpecialActive;
+    public GameObject minimapCont;
 
     // Use this for initialization
     protected override void Start()
@@ -173,6 +177,7 @@ public class Player : Character
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        #region ROOMS
         if (other.gameObject.tag == "room1")
         {
             roomCount = 1;
@@ -233,7 +238,14 @@ public class Player : Character
             // CamMove.Shake(0.1f, 0.1f);
             //CamMove.CameraShift();
         }
-
+        if (other.gameObject.tag == "BossRoom")
+        {
+            roomCount = 11;
+            // CamMove.Shake(0.1f, 0.1f);
+            //CamMove.CameraShift();
+            minimapCont.SetActive(false);
+        }
+        #endregion
         if (other.gameObject.tag == "bullet")
         {
             Destroy(other.gameObject);
@@ -243,6 +255,7 @@ public class Player : Character
                 TakeDamage(10);
             }
         }
+      
 
         if (other.gameObject.tag == "gold")
         {

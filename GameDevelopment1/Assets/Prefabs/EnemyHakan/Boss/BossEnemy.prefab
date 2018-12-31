@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 95210476934345472}
   - component: {fileID: 50202295317778668}
   - component: {fileID: 70948337352259846}
-  - component: {fileID: 114481780358129892}
+  - component: {fileID: 114677677449215920}
   m_Layer: 8
   m_Name: BossEnemy
   m_TagString: BossMeele
@@ -385,17 +385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 429558ba0d72cf247a4a588d84e190a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114481780358129892
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1958353769748172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd0b117f7dba0db4b83496f8926e3e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114604837905363708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -409,6 +398,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statValue: {fileID: 0}
   lerpSpeed: 5
+--- !u!114 &114677677449215920
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1958353769748172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050593f808d5d304ea1a2014416b5ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114770693549854034
 MonoBehaviour:
   m_ObjectHideFlags: 1

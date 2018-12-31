@@ -97,7 +97,6 @@ public class BoosScript : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(bossHealth.MyCurrentValue);
         healthgroup.alpha = 1;
 
         Movement();
