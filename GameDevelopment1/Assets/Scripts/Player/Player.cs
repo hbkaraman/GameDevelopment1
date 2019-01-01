@@ -66,12 +66,16 @@ public class Player : Character
             }
         }
 
-        if (Input.GetKey(KeyCode.R))
-        {
-            Time.timeScale = 1;
-            Application.LoadLevel(Application.loadedLevel);
-        }
 
+		if (health.MyCurrentValue <= 0)
+		{
+			if (Input.GetKey(KeyCode.R))
+			{
+				Time.timeScale = 1;
+				Application.LoadLevel(Application.loadedLevel);
+			}
+		}
+       
 
         if (health.MyCurrentValue > 70)
         {
@@ -123,10 +127,11 @@ public class Player : Character
 
         if (Input.GetKeyDown(KeyCode.G) && mana.MyCurrentValue < 50 && bluePotCount > 0)
         {
-            mana.MyCurrentValue += 10;
+            mana.MyCurrentValue += 5;
             bluePotCount -= 1;
             Instantiate(ManaEffect, transform.position, Quaternion.identity);
-        }
+			iTween.ShakeScale(this.gameObject, iTween.Hash("x", 0.1, "time", 2, "easetype", "easeInOutSine"));
+		}
     }
 
     private void GetInput()
@@ -151,11 +156,11 @@ public class Player : Character
         }
         if (Input.GetKeyDown(KeyCode.F) && health.MyCurrentValue < health.MyMaxValue && redPotCount > 0)
         {
-            health.MyCurrentValue += 10;
+            health.MyCurrentValue += 15;
             redPotCount -= 1;
             Instantiate(HealthEffect, transform.position, Quaternion.identity);
-
-        }
+			iTween.ShakeScale(this.gameObject, iTween.Hash("x", 0.1, "time", 2, "easetype", "easeInOutSine"));
+		}
     }
 
 
