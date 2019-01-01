@@ -12,15 +12,14 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114930672654034750}
-  - {fileID: 114061355771206308}
-  EditorEvents:
-  - {fileID: 114924651480354564}
+  - {fileID: 114917304700866448}
+  - {fileID: 114800767702817546}
+  EditorEvents: []
   MasterBanks:
-  - {fileID: 114061355771206308}
+  - {fileID: 114800767702817546}
   StringsBanks:
-  - {fileID: 114930672654034750}
-  stringsBankWriteTime: 636818082702924220
+  - {fileID: 114917304700866448}
+  stringsBankWriteTime: 636819766713468051
   cacheVersion: 3
 --- !u!114 &114061355771206308
 MonoBehaviour:
@@ -39,6 +38,42 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 23680
+  Exists: 1
+--- !u!114 &114800767702817546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Berat\Documents\FMOD Studio\rebirth\Build\Desktop\Master Bank.bank
+  lastModified: 636819766713403153
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 12474
+  Exists: 1
+--- !u!114 &114917304700866448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Berat\Documents\FMOD Studio\rebirth\Build\Desktop\Master Bank.strings.bank
+  lastModified: 636819766713468051
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 672
   Exists: 1
 --- !u!114 &114924651480354564
 MonoBehaviour:

@@ -13,16 +13,21 @@ public class StandingEnemy : MonoBehaviour {
 	private bool isShot;
 	private Animator anim;
 
+    private AudioSource standingSource;
+    public AudioClip standingSound;
+
 	void Start()
 	{
 		anim = GetComponent<Animator>();
+        standingSource = GetComponent<AudioSource>();
 	}
 
 	void Update()
 	{
 		if (isShot == true)
 		{
-			anim.SetBool("isShoot", true);
+            standingSource.PlayOneShot(standingSound);
+            anim.SetBool("isShoot", true);
 		}
 		else
 		{

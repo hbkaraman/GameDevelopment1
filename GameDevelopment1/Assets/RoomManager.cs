@@ -31,7 +31,6 @@ public class RoomManager : MonoBehaviour
     public bool[] roomFin;
     public bool bossDoor;
 
-
     void Start()
     {
 
@@ -51,6 +50,5 @@ public class RoomManager : MonoBehaviour
                 bossDoor = true;
             }
         }
-
     }
 }

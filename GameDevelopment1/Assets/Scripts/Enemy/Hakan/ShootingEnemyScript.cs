@@ -16,12 +16,14 @@ public class ShootingEnemyScript : MonoBehaviour {
 	private float timeBtwShoots;
 	public float startTimeBtwShoots;
 
+    private AudioSource shootSource;
+    public AudioClip shootSound;
+
 	private int Randomize;
 
 	private EnemyScript Enemy;
 
-	private Animator anim;
-	
+    private Animator anim;
 
 	private bool isShoting;
 
@@ -30,6 +32,7 @@ public class ShootingEnemyScript : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag("Player").transform;
 		Enemy = GetComponent<EnemyScript>();
 		anim = GetComponent<Animator>();
+        shootSource = GetComponent<AudioSource>();
 
 		timeBtwShoots = startTimeBtwShoots;
 
@@ -44,11 +47,6 @@ public class ShootingEnemyScript : MonoBehaviour {
 
 	private void Movement()
 	{
-
-
-		
-
-
 		if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
 		{
 			transform.position = Vector2.MoveTowards(transform.position, player.position, Enemy.speed * Time.deltaTime);
@@ -68,25 +66,20 @@ public class ShootingEnemyScript : MonoBehaviour {
 	{
 		if (isShoting == true)
 		{
+            shootSource.PlayOneShot(shootSound);
 			anim.SetInteger("State", 1);
 		}
 		else
 		{
 			anim.SetInteger("State", 0);
 		}
-
-
 		Attack();
 	}
 
 	private void Attack()
 	{
-		
-
 		if (timeBtwShoots <= 0)
 		{
-			
-
 			if (Randomize == 0)
 			{
 

@@ -14,11 +14,9 @@ public class PatrolShootingEnemy : MonoBehaviour {
 	public float minY;
 	public float maxY;
 
-
 	public Transform shootingPosition;
 	public Transform shootingPosition2;
 	public GameObject enemyBullet;
-
 
 	private float timeBtwShoots;
 	public float startTimeBtwShoots;
@@ -35,6 +33,9 @@ public class PatrolShootingEnemy : MonoBehaviour {
 	private Rigidbody2D rb;
 
 	private Transform target;
+    private AudioSource patrolSource;
+    public AudioClip patrolSound;
+
 	public Transform Target
 	{
 		get
@@ -55,6 +56,7 @@ public class PatrolShootingEnemy : MonoBehaviour {
 		Enemy = GetComponent<EnemyScript>();
 		Anim = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
+        patrolSource = GetComponent<AudioSource>();
 		
 		waitTime = startWaitTime;
 
@@ -107,11 +109,11 @@ public class PatrolShootingEnemy : MonoBehaviour {
 
 			if (timeBtwShoots <= 0)
 			{
+                patrolSource.PlayOneShot(patrolSound);
 				if (Randomize == 0)
 				{
 					Instantiate(enemyBullet, shootingPosition.position, Quaternion.identity);
 					isShoot = true;
-
 				}
 				else if (Randomize == 1)
 				{

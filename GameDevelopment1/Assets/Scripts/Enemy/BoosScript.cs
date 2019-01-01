@@ -18,10 +18,10 @@ public class BoosScript : MonoBehaviour
 
     private float waitTime;
     public float startWaitTime;
-	
 
-	public Transform moveSpot;
-	public Transform enemSpot;
+
+    public Transform moveSpot;
+    public Transform enemSpot;
     public float minX;
     public float maxX;
     public float minY;
@@ -36,11 +36,15 @@ public class BoosScript : MonoBehaviour
     private float timeBtwShoots;
     public float startTimeBtwShoots;
 
-	private float timeBtwShootsLine;
-	public float startTimeBtwShootsLine;
+    private float timeBtwShootsLine;
+    public float startTimeBtwShootsLine;
+
+    private AudioSource bossSource;
+    public AudioClip bossSound;
+    public AudioClip bossLaser;
 
 
-	private int Randomize;
+    private int Randomize;
 
     private Animator Anim;
 
@@ -75,10 +79,10 @@ public class BoosScript : MonoBehaviour
     public GameObject deathEffect;
     public GameObject explosion;
 
-	public GameObject ınstanEnemy;
+    public GameObject ınstanEnemy;
 
-	private float Timer;
-	private float waitTimer = 4f;
+    private float Timer;
+    private float waitTimer = 4f;
 
     private void Start()
     {
@@ -89,6 +93,8 @@ public class BoosScript : MonoBehaviour
         waitTime = startWaitTime;
         canMove = true;
         lineShoot = false;
+
+        bossSource = GetComponent<AudioSource>();
 
         moveSpot.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 44.4f);
 
@@ -124,22 +130,20 @@ public class BoosScript : MonoBehaviour
         if (bossHealth.MyCurrentValue <= 150 && bossHealth.MyCurrentValue >= 130)
         {
             StartCoroutine(Invisible());
-		
         }
         if (bossHealth.MyCurrentValue <= 130)
         {
             startWaitTime = 1f;
             startTimeBtwShoots = 0.4f;
 
+            Timer += Time.deltaTime;
 
-			Timer += Time.deltaTime;
+            if (Timer > waitTimer)
+            {
+                Spawn();
+                Timer = -5;
+            }
 
-			if(Timer> waitTimer)
-			{
-				Spawn();
-				Timer = -5;
-			}
-		
         }
         if (bossHealth.MyCurrentValue <= 40)
         {
@@ -152,9 +156,9 @@ public class BoosScript : MonoBehaviour
         GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
         startTimeBtwShoots = 0.1f;
         yield return new WaitForSeconds(2f);
-     /*   GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
-        yield return new WaitForSeconds(2f);
-        GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);*/
+        /*   GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+           yield return new WaitForSeconds(2f);
+           GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);*/
         yield return new WaitForSeconds(3f);
         startTimeBtwShoots = 0.7f;
         GetComponent<SpriteRenderer>().color = Color.white;
@@ -196,35 +200,34 @@ public class BoosScript : MonoBehaviour
         //camAnim.SetTrigger("shake");
         Instantiate(explosion, transform.position, Quaternion.identity);
         bossHealth.MyCurrentValue -= damage;
-
     }
 
-	void Spawn()
-	{
-		enemSpot.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 44.4f);
-		Instantiate(ınstanEnemy, enemSpot.position, Quaternion.identity);
-		enemSpot.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 44.4f);
-		Instantiate(ınstanEnemy, enemSpot.position, Quaternion.identity);
-		enemSpot.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 44.4f);
-		Instantiate(ınstanEnemy, enemSpot.position, Quaternion.identity);
+    void Spawn()
+    {
+        bossSource.PlayOneShot(bossSound);
+        enemSpot.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 44.4f);
+        Instantiate(ınstanEnemy, enemSpot.position, Quaternion.identity);
+        enemSpot.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 44.4f);
+        Instantiate(ınstanEnemy, enemSpot.position, Quaternion.identity);
+        enemSpot.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 44.4f);
+        Instantiate(ınstanEnemy, enemSpot.position, Quaternion.identity);
+    }
 
-	}
-
-	void Shoot()
+    void Shoot()
     {
         if (shooting)
         {
             if (target != null)
-            {   
+            {
                 if (timeBtwShoots <= 0)
                 {
 
-					Instantiate(enemyBullet, shootingPosition.position, Quaternion.identity);
-					isShoot = true;
-			
-					timeBtwShoots = startTimeBtwShoots;
+                    Instantiate(enemyBullet, shootingPosition.position, Quaternion.identity);
+                    isShoot = true;
 
-				}
+                    timeBtwShoots = startTimeBtwShoots;
+
+                }
                 else
                 {
                     timeBtwShoots -= Time.deltaTime;
@@ -235,6 +238,8 @@ public class BoosScript : MonoBehaviour
 
         if (lineShoot)
         {
+            bossSource.PlayOneShot(bossLaser);
+
             if (timeBtwShootsLine <= 0)
             {
                 for (int a = 0; a < 4; a++)

@@ -25,13 +25,18 @@ public class Player : Character
 
     private float timer;
     private float specialTime = 3f;
+    
 
     private bool isSpecialActive;
     public GameObject minimapCont;
 
+    public AudioSource grootSource;
+    public AudioClip grootSound;
+
     // Use this for initialization
     protected override void Start()
     {
+        grootSource = GetComponent<AudioSource>();
         base.Start();
         redPotCount = 1;
         bluePotCount = 1;
@@ -67,15 +72,15 @@ public class Player : Character
         }
 
 
-		if (health.MyCurrentValue <= 0)
-		{
-			if (Input.GetKey(KeyCode.R))
-			{
-				Time.timeScale = 1;
-				Application.LoadLevel(Application.loadedLevel);
-			}
-		}
-       
+        if (health.MyCurrentValue <= 0)
+        {
+            if (Input.GetKey(KeyCode.R))
+            {
+                Time.timeScale = 1;
+                Application.LoadLevel(Application.loadedLevel);
+            }
+        }
+
 
         if (health.MyCurrentValue > 70)
         {
@@ -130,8 +135,8 @@ public class Player : Character
             mana.MyCurrentValue += 5;
             bluePotCount -= 1;
             Instantiate(ManaEffect, transform.position, Quaternion.identity);
-			iTween.ShakeScale(this.gameObject, iTween.Hash("x", 0.1, "time", 2, "easetype", "easeInOutSine"));
-		}
+            iTween.ShakeScale(this.gameObject, iTween.Hash("x", 0.1, "time", 2, "easetype", "easeInOutSine"));
+        }
     }
 
     private void GetInput()
@@ -159,10 +164,9 @@ public class Player : Character
             health.MyCurrentValue += 15;
             redPotCount -= 1;
             Instantiate(HealthEffect, transform.position, Quaternion.identity);
-			iTween.ShakeScale(this.gameObject, iTween.Hash("x", 0.1, "time", 2, "easetype", "easeInOutSine"));
-		}
+            iTween.ShakeScale(this.gameObject, iTween.Hash("x", 0.1, "time", 2, "easetype", "easeInOutSine"));
+        }
     }
-
 
     public virtual void TakeDamage(float damage)
     {
@@ -186,66 +190,88 @@ public class Player : Character
         if (other.gameObject.tag == "room1")
         {
             roomCount = 1;
+            grootSource.pitch = Random.Range(0.75f, 1.15f);
+            grootSource.PlayOneShot(grootSound);
             //CamMove.Shake(0.1f,0.1f);
             //CamMove.CameraShift();
         }
         if (other.gameObject.tag == "room2")
         {
             roomCount = 2;
+            grootSource.pitch = Random.Range(0.75f, 1.15f);
+            grootSource.PlayOneShot(grootSound);
             //CamMove.Shake(0.1f, 0.1f);
             //CamMove.CameraShift();
         }
         if (other.gameObject.tag == "room3")
         {
             roomCount = 3;
+            grootSource.pitch = Random.Range(0.75f, 1.15f);
+            grootSource.PlayOneShot(grootSound);
             //CamMove.Shake(0.1f, 0.1f);
             //CamMove.CameraShift();
         }
         if (other.gameObject.tag == "room4")
         {
             roomCount = 4;
+            grootSource.pitch = Random.Range(0.75f, 1.15f);
+            grootSource.PlayOneShot(grootSound);
             // CamMove.Shake(0.1f, 0.1f);
             //CamMove.CameraShift();
         }
         if (other.gameObject.tag == "room5")
         {
             roomCount = 5;
+            grootSource.pitch = Random.Range(0.75f, 1.15f);
+            grootSource.PlayOneShot(grootSound);
             //CamMove.Shake(0.1f,0.1f);
             //CamMove.CameraShift();
         }
         if (other.gameObject.tag == "room6")
         {
             roomCount = 6;
+            grootSource.pitch = Random.Range(0.75f, 1.15f);
+            grootSource.PlayOneShot(grootSound);
             //CamMove.Shake(0.1f, 0.1f);
             //CamMove.CameraShift();
         }
         if (other.gameObject.tag == "room7")
         {
             roomCount = 7;
+            grootSource.pitch = Random.Range(0.75f, 1.15f);
+            grootSource.PlayOneShot(grootSound);
             //CamMove.Shake(0.1f, 0.1f);
             //CamMove.CameraShift();
         }
         if (other.gameObject.tag == "room8")
         {
             roomCount = 8;
+            grootSource.pitch = Random.Range(0.75f, 1.15f);
+            grootSource.PlayOneShot(grootSound);
             // CamMove.Shake(0.1f, 0.1f);
             //CamMove.CameraShift();
         }
         if (other.gameObject.tag == "room9")
         {
             roomCount = 9;
+            grootSource.pitch = Random.Range(0.75f, 1.15f);
+            grootSource.PlayOneShot(grootSound);
             //CamMove.Shake(0.1f, 0.1f);
             //CamMove.CameraShift();
         }
         if (other.gameObject.tag == "room10")
         {
             roomCount = 10;
+            grootSource.pitch = Random.Range(0.75f, 1.15f);
+            grootSource.PlayOneShot(grootSound);
             // CamMove.Shake(0.1f, 0.1f);
             //CamMove.CameraShift();
         }
         if (other.gameObject.tag == "BossRoom")
         {
             roomCount = 11;
+            grootSource.pitch = Random.Range(0.75f, 1.15f);
+            grootSource.PlayOneShot(grootSound);
             // CamMove.Shake(0.1f, 0.1f);
             //CamMove.CameraShift();
             minimapCont.SetActive(false);
@@ -260,7 +286,7 @@ public class Player : Character
                 TakeDamage(10);
             }
         }
-      
+
 
         if (other.gameObject.tag == "gold")
         {
@@ -293,29 +319,4 @@ public class Player : Character
             isDoorOpen = false;
         }
     }
-
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            if (isSpecialActive == false)
-            {
-                // TakeDamage(10);
-            }
-        }
-
-        if (collision.gameObject.tag == "Boss")
-        {
-            if (isSpecialActive == false)
-            {
-                //TakeDamage(30);
-            }
-        }
-    }
-
-
-
-
-
 }

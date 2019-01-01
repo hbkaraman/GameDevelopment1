@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 70854348856852040}
   - component: {fileID: 95377535666886914}
   - component: {fileID: 114869287787299196}
+  - component: {fileID: 82179211753059136}
   m_Layer: 8
   m_Name: "PatrolluAte\u015FEdenEnemy(Hakan)"
   m_TagString: Enemy
@@ -156,7 +157,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1263093426967844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.025614, y: 16.075605, z: 44.4}
+  m_LocalPosition: {x: 19.38, y: 18.54, z: 44.4}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
   - {fileID: 224173345351571862}
@@ -214,7 +215,7 @@ Transform:
   m_GameObject: {fileID: 1395820473891102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 20.271923, y: 9.3743, z: 9.3743}
+  m_LocalScale: {x: 27.873894, y: 13.709913, z: 9.3743}
   m_Children: []
   m_Father: {fileID: 4200158483422346}
   m_RootOrder: 3
@@ -259,6 +260,101 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.93, y: 2.09}
   m_Direction: 0
+--- !u!82 &82179211753059136
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1263093426967844}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 38045b0efd4e3114190a7eeb78441e3d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.211
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &95377535666886914
 Animator:
   serializedVersion: 3
@@ -290,15 +386,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWaitTime: 1
   moveSpot: {fileID: 0}
-  minX: 15
-  maxX: 38
-  minY: 11
-  maxY: 21
+  minX: 17
+  maxX: 37
+  minY: 12
+  maxY: 19.5
   shootingPosition: {fileID: 4463749650755416}
   shootingPosition2: {fileID: 4721818961273234}
   enemyBullet: {fileID: 1327893952493908, guid: 4062aec141047414492b8d792c7ff532,
     type: 2}
   startTimeBtwShoots: 1.5
+  patrolSound: {fileID: 8300000, guid: 38045b0efd4e3114190a7eeb78441e3d, type: 3}
 --- !u!114 &114120542346305256
 MonoBehaviour:
   m_ObjectHideFlags: 1

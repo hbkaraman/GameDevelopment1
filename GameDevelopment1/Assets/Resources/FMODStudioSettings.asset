@@ -13,9 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: D:\Belgeler\FMOD Studio\Rebirth\Rebirth.fspro
-  SourceProjectPathUnformatted: D:\Belgeler\FMOD Studio\Rebirth\Rebirth.fspro
-  SourceBankPathUnformatted: D:\Belgeler\FMOD Studio\Rebirth\Build
+  sourceProjectPath: C:\Users\Berat\Documents\FMOD Studio\rebirth\rebirth.fspro
+  SourceProjectPathUnformatted: C:\Users\Berat\Documents\FMOD Studio\rebirth\rebirth.fspro
+  SourceBankPathUnformatted: C:\Users\Berat\Documents\FMOD Studio\rebirth\Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0

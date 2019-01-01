@@ -17,6 +17,9 @@ public class MeeleEnemy : MonoBehaviour {
 	public LayerMask Player;
 	public float damage;
 
+    private AudioSource attackSound;
+    public AudioClip attack;
+
 	public Transform Target
 	{
 		get
@@ -42,6 +45,7 @@ public class MeeleEnemy : MonoBehaviour {
 		Enemy = GetComponent<EnemyScript>();
 		anim = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
+        attackSound = GetComponent<AudioSource>();
 	}
 
 	void Update()
@@ -84,12 +88,15 @@ public class MeeleEnemy : MonoBehaviour {
 				{
 
 					anim.SetLayerWeight(1, 0);
+
 					if (timeBtwAttack <= 0)
 					{
-						Collider2D[] playerToDamage = Physics2D.OverlapCircleAll(transform.position, attackRange, Player);
+                        Collider2D[] playerToDamage = Physics2D.OverlapCircleAll(transform.position, attackRange, Player);
 						for (int i = 0; i < playerToDamage.Length; i++)
 						{
-							playerToDamage[i].GetComponent<Player>().TakeDamage(damage);
+                            attackSound.Play();
+
+                            playerToDamage[i].GetComponent<Player>().TakeDamage(damage);
 						}
 
 						
@@ -109,12 +116,6 @@ public class MeeleEnemy : MonoBehaviour {
 			anim.SetLayerWeight(1, 1);
 			direction = Vector2.zero;
 		}
-	}
-
-	private void Attack()
-	{
-		
-
 	}
 
 	private void OnDrawGizmosSelected()
