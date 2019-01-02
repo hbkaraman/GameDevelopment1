@@ -73,8 +73,6 @@ public class BoosScript : MonoBehaviour
         }
     }
 
-    public Image winScene;
-
     //public Animator camAnim;
     public GameObject deathEffect;
     public GameObject explosion;
@@ -83,6 +81,11 @@ public class BoosScript : MonoBehaviour
 
     private float Timer;
     private float waitTimer = 4f;
+
+
+	public GameObject Shadow;
+	public bool isDead;
+
 
     private void Start()
     {
@@ -120,18 +123,14 @@ public class BoosScript : MonoBehaviour
 
         if (bossHealth.MyCurrentValue <= 5f)
         {
-            Debug.Log("aaa");
-            Instantiate(deathEffect, transform.position, Quaternion.identity);
-            winScene.enabled = true;
-            Time.timeScale = 0;
-            Destroy(gameObject);
+			isDead = true;
         }
 
-        if (bossHealth.MyCurrentValue <= 150 && bossHealth.MyCurrentValue >= 130)
+        if (bossHealth.MyCurrentValue <= 170 && bossHealth.MyCurrentValue >= 120)
         {
             StartCoroutine(Invisible());
         }
-        if (bossHealth.MyCurrentValue <= 130)
+        if (bossHealth.MyCurrentValue <= 120)
         {
             startWaitTime = 1f;
             startTimeBtwShoots = 0.4f;
@@ -153,18 +152,18 @@ public class BoosScript : MonoBehaviour
 
     IEnumerator Invisible()
     {
-        GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+		Shadow.GetComponent<SpriteRenderer>().enabled = false;
+		GetComponent<SpriteRenderer>().enabled = false;
         startTimeBtwShoots = 0.1f;
-        yield return new WaitForSeconds(2f);
-        /*   GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
-           yield return new WaitForSeconds(2f);
-           GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);*/
         yield return new WaitForSeconds(3f);
         startTimeBtwShoots = 0.7f;
-        GetComponent<SpriteRenderer>().color = Color.white;
-    }
+		GetComponent<SpriteRenderer>().enabled = true;
+		Shadow.GetComponent<SpriteRenderer>().enabled = true;
+		yield return new WaitForSeconds(2f);
 
-    IEnumerator ShootLine()
+	}
+
+	IEnumerator ShootLine()
     {
         lineShoot = true;
         //canMove = false;
@@ -204,6 +203,7 @@ public class BoosScript : MonoBehaviour
 
     void Spawn()
     {
+		bossSource.pitch = Random.Range(1, 1.5f);
         bossSource.PlayOneShot(bossSound);
         enemSpot.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 44.4f);
         Instantiate(ınstanEnemy, enemSpot.position, Quaternion.identity);

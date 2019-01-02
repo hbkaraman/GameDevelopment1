@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -37,7 +36,7 @@ public class MeeleEnemy : MonoBehaviour {
 	private Rigidbody2D rb;
 
 	private EnemyScript Enemy;
-
+	
 
 
 	private void Start()
@@ -46,6 +45,7 @@ public class MeeleEnemy : MonoBehaviour {
 		anim = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
         attackSound = GetComponent<AudioSource>();
+		
 	}
 
 	void Update()
@@ -75,6 +75,7 @@ public class MeeleEnemy : MonoBehaviour {
 
 			if (Vector2.Distance(transform.position, target.position) > StopDistan)
 			{
+				
 				rb.MovePosition(Vector2.MoveTowards(transform.position, target.position, Enemy.speed * Time.deltaTime));
 			}
 
@@ -94,9 +95,9 @@ public class MeeleEnemy : MonoBehaviour {
                         Collider2D[] playerToDamage = Physics2D.OverlapCircleAll(transform.position, attackRange, Player);
 						for (int i = 0; i < playerToDamage.Length; i++)
 						{
-                            attackSound.Play();
+							attackSound.Play();
 
-                            playerToDamage[i].GetComponent<Player>().TakeDamage(damage);
+							playerToDamage[i].GetComponent<Player>().TakeDamage(damage);
 						}
 
 						

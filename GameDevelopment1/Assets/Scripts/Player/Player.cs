@@ -23,6 +23,7 @@ public class Player : Character
     public GameObject HealthEffect;
     public GameObject ManaEffect;
 
+
     private float timer;
     private float specialTime = 3f;
     
@@ -31,10 +32,19 @@ public class Player : Character
     public GameObject minimapCont;
 
     public AudioSource grootSource;
-    public AudioClip grootSound;
+	public AudioSource cam;
+	public AudioClip grootSound;
+	public AudioClip Coin;
+	public AudioClip Health;
+	public AudioClip Mana;
+	public AudioClip damagee;
+	public AudioClip PickUp;
 
-    // Use this for initialization
-    protected override void Start()
+	public bool isDead;
+
+
+	// Use this for initialization
+	protected override void Start()
     {
         grootSource = GetComponent<AudioSource>();
         base.Start();
@@ -70,17 +80,6 @@ public class Player : Character
                 }
             }
         }
-
-
-        if (health.MyCurrentValue <= 0)
-        {
-            if (Input.GetKey(KeyCode.R))
-            {
-                Time.timeScale = 1;
-                Application.LoadLevel(Application.loadedLevel);
-            }
-        }
-
 
         if (health.MyCurrentValue > 70)
         {
@@ -136,8 +135,9 @@ public class Player : Character
             bluePotCount -= 1;
             Instantiate(ManaEffect, transform.position, Quaternion.identity);
             iTween.ShakeScale(this.gameObject, iTween.Hash("x", 0.1, "time", 2, "easetype", "easeInOutSine"));
-        }
-    }
+			grootSource.PlayOneShot(Mana);
+		}
+	}
 
     private void GetInput()
     {
@@ -165,22 +165,19 @@ public class Player : Character
             redPotCount -= 1;
             Instantiate(HealthEffect, transform.position, Quaternion.identity);
             iTween.ShakeScale(this.gameObject, iTween.Hash("x", 0.1, "time", 2, "easetype", "easeInOutSine"));
-        }
-    }
+			grootSource.PlayOneShot(Health);
+		}
+	}
 
     public virtual void TakeDamage(float damage)
     {
         health.MyCurrentValue -= damage;
         Instantiate(destroyEffect, transform.position, Quaternion.identity);
+		grootSource.PlayOneShot(damagee);
 
         if (health.MyCurrentValue <= 0)
         {
-            LossScene.enabled = true;
-
-            if (LossScene.enabled == true)
-            {
-                Time.timeScale = 0;
-            }
+			isDead = true;
         }
     }
 
@@ -291,17 +288,20 @@ public class Player : Character
         if (other.gameObject.tag == "gold")
         {
             goldCount += 5;
-            Destroy(other.gameObject);
+			grootSource.PlayOneShot(Coin);
+			Destroy(other.gameObject);
         }
         if (other.gameObject.tag == "redPot")
         {
             redPotCount += 1;
-            Destroy(other.gameObject);
+			grootSource.PlayOneShot(PickUp);
+			Destroy(other.gameObject);
         }
         if (other.gameObject.tag == "bluePot")
         {
             bluePotCount += 1;
-            Destroy(other.gameObject);
+			grootSource.PlayOneShot(PickUp);
+			Destroy(other.gameObject);
         }
     }
 

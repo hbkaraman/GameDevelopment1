@@ -316,11 +316,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5c6a6fe88b1735d4c900670599a9c95a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7fc01b443cd16344eb945ac416d3b804, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.026
+  m_Volume: 0.1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   damage: 5
-  attack: {fileID: 8300000, guid: 5c6a6fe88b1735d4c900670599a9c95a, type: 3}
+  attack: {fileID: 8300000, guid: 7fc01b443cd16344eb945ac416d3b804, type: 3}
   damageEffect: {fileID: 1110264763428426, guid: eb4d97fc7d75d174c8bb2ef1a3aa7fff,
     type: 2}
 --- !u!114 &114130381084306092

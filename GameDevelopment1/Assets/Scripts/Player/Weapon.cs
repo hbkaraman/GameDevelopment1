@@ -14,6 +14,8 @@ public class Weapon : MonoBehaviour {
     public Player player;
 
 	Quaternion bulletDirection;
+	public AudioSource WeaponSource;
+	public AudioClip shoot;
 
 	// Use this for initialization
 	void Start ()
@@ -62,6 +64,7 @@ public class Weapon : MonoBehaviour {
 				//Instantiate(shotEffect, shotPoint.position, Quaternion.identity);
 				//camAnim.SetTrigger("shake");
 				Instantiate(bullet, shotPoint.position, transform.rotation);
+				WeaponSource.PlayOneShot(shoot);
 				timeBtwShots = startTimeBtwShots;
 			}
 		}

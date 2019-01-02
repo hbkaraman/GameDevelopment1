@@ -15,10 +15,12 @@ public class BulletScript : MonoBehaviour {
 	Quaternion bulletDirection;
 	public Rigidbody2D rb;
 
+
 	private void Start()
 	{
 		Invoke("DestroyProjectile", lifeTime);
 		rb = GetComponent<Rigidbody2D>();
+		
 
 		//Vector2 velTotal = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>().velocity + Vector2.right;
 		rb.velocity = transform.right * speed;
@@ -29,6 +31,7 @@ public class BulletScript : MonoBehaviour {
 		RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.forward, distance, whatIsSolid);
 		if (hitInfo.collider != null)
 		{
+
 			if (hitInfo.collider.CompareTag("Enemy"))
 			{
 				hitInfo.collider.GetComponent<EnemyScript>().TakeDamage(damage);

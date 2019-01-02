@@ -26,7 +26,7 @@ public class StandingEnemy : MonoBehaviour {
 	{
 		if (isShot == true)
 		{
-            standingSource.PlayOneShot(standingSound);
+            
             anim.SetBool("isShoot", true);
 		}
 		else
@@ -37,6 +37,7 @@ public class StandingEnemy : MonoBehaviour {
 		if (timeBtwShoots <= 0)
 		{
 			Instantiate(Bullet, ShottingPoint.position, Quaternion.identity);
+			standingSource.PlayOneShot(standingSound);
 			isShot = true;
 			timeBtwShoots = startTimeBtwShoots;
 		}

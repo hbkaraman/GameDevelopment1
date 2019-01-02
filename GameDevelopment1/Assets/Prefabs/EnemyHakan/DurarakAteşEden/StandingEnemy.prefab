@@ -193,9 +193,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fde7b5c3ff50e6e4c886acf1f67e3efb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d1af79749c4ffe843bcc85c07e69ddc5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.09
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -351,7 +351,7 @@ MonoBehaviour:
   startTimeBtwShoots: 5
   Bullet: {fileID: 1034350771839380, guid: 6c7f3f9ef3f4f544ca8361f262847b55, type: 2}
   ShottingPoint: {fileID: 4558643016583660}
-  standingSound: {fileID: 8300000, guid: fde7b5c3ff50e6e4c886acf1f67e3efb, type: 3}
+  standingSound: {fileID: 8300000, guid: d1af79749c4ffe843bcc85c07e69ddc5, type: 3}
 --- !u!114 &114445180342834102
 MonoBehaviour:
   m_ObjectHideFlags: 1

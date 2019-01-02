@@ -5,13 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class UIManagerScripts : MonoBehaviour {
 
+	private void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.R))
+		{
+			SceneManager.LoadScene("GamePlayScene");
+		}
+	}
 	
-    public void StartGame()
-    {
-        SceneManager.LoadScene("SecondScene");
-    }
-    public void Quit ()
-    {
-       Application.Quit();
-    }
 }

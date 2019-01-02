@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4849257998498272}
   - component: {fileID: 212093901705114984}
   - component: {fileID: 61666339180814866}
+  - component: {fileID: 114357182010532670}
   m_Layer: 0
   m_Name: potion_blue
   m_TagString: bluePot
@@ -66,6 +67,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114357182010532670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095158171050264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e3a0bdab4165941b35bf741948358b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Time: 2
 --- !u!212 &212093901705114984
 SpriteRenderer:
   m_ObjectHideFlags: 1

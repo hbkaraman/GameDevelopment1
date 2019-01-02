@@ -34,7 +34,7 @@ public class PatrolShootingEnemy : MonoBehaviour {
 
 	private Transform target;
     private AudioSource patrolSource;
-    public AudioClip patrolSound;
+    public AudioClip ShotSound;
 
 	public Transform Target
 	{
@@ -73,6 +73,7 @@ public class PatrolShootingEnemy : MonoBehaviour {
 
 		if(isShoot == true)
 		{
+			patrolSource.PlayOneShot(ShotSound);
 			Anim.SetInteger("State", 1);
 		}
 		else
@@ -109,7 +110,6 @@ public class PatrolShootingEnemy : MonoBehaviour {
 
 			if (timeBtwShoots <= 0)
 			{
-                patrolSource.PlayOneShot(patrolSound);
 				if (Randomize == 0)
 				{
 					Instantiate(enemyBullet, shootingPosition.position, Quaternion.identity);
