@@ -288,7 +288,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 88
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -403,7 +403,7 @@ MonoBehaviour:
     m_Bits: 1024
   damage: 10
   attack: {fileID: 8300000, guid: 12d0c4924bd35a648afdf4897b43d053, type: 3}
-  damageEffect: {fileID: 1110264763428426, guid: eb4d97fc7d75d174c8bb2ef1a3aa7fff,
+  damageEffect: {fileID: 1110264763428426, guid: d1e24fa20c0329d438d4218da3657d9f,
     type: 2}
 --- !u!114 &114130381084306092
 MonoBehaviour:
@@ -529,9 +529,9 @@ MonoBehaviour:
   startStunTime: 0
   rS: {fileID: 0}
   Enabled: 0
-  deathEffect: {fileID: 1110264763428426, guid: 5487e197c27fe54408d2e6455649c432,
+  deathEffect: {fileID: 1110264763428426, guid: d1e24fa20c0329d438d4218da3657d9f,
     type: 2}
-  explosion: {fileID: 1110264763428426, guid: b4289bfff4b81af4f9608cb58a4b4289, type: 2}
+  explosion: {fileID: 1110264763428426, guid: d1e24fa20c0329d438d4218da3657d9f, type: 2}
   gold: {fileID: 1750207947931956, guid: ba11059a7f5a9694e8502ec4499a9f64, type: 2}
   bluePot: {fileID: 1095158171050264, guid: 5bcadf3515f773e4183196bb873c90c1, type: 2}
   redPot: {fileID: 1470974743451642, guid: 5ecc74cf70b092a418674d61b9c48708, type: 2}
